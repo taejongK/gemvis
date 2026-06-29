@@ -1,0 +1,38 @@
+# Gemvis 모델 레지스트리
+#
+# 백엔드: llama.cpp (GGUF 포맷)
+# 기본 모델: unsloth/gemma-4-E2B-it-GGUF (Q4_K_M, ~2GB)
+
+default: gemma-4-e2b-q4
+
+models:
+  # === 기본 (원클릭 설치 대상) ===
+  gemma-4-e2b-q4:
+    repo_id: unsloth/gemma-4-E2B-it-GGUF
+    local_dir: models/gemma-4-e2b
+    files:
+      - gemma-4-E2B-it-Q4_K_M.gguf
+    size_gb: 2
+    purpose: "기본 모델 — llama.cpp 추론 (Q4_K_M 양자화)"
+    requires_auth: false
+    default: true
+
+  # === 선택 — 고품질 ===
+  gemma-4-e2b-q8:
+    repo_id: unsloth/gemma-4-E2B-it-GGUF
+    local_dir: models/gemma-4-e2b
+    files:
+      - gemma-4-E2B-it-Q8_0.gguf
+    size_gb: 4
+    purpose: "Q8_0 양자화 (정확도 우선)"
+    requires_auth: false
+
+  # === 선택 — 최대 정확도 (BF16) ===
+  gemma-4-e2b-bf16:
+    repo_id: unsloth/gemma-4-E2B-it-GGUF
+    local_dir: models/gemma-4-e2b
+    files:
+      - gemma-4-E2B-it-BF16.gguf
+    size_gb: 8
+    purpose: "BF16 — 양자화 없음 (벤치마크용)"
+    requires_auth: false

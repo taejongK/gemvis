@@ -1,0 +1,2267 @@
+{
+  "folderPicker": {
+    "title": {
+      "ko": "폴더 선택",
+      "en": "Select Folder",
+      "ja": "フォルダを選択",
+      "zh": "选择文件夹"
+    },
+    "select": {
+      "ko": "이 폴더 선택",
+      "en": "Select this folder",
+      "ja": "このフォルダを選択",
+      "zh": "选择此文件夹"
+    },
+    "parent": {
+      "ko": "상위 폴더",
+      "en": "Parent",
+      "ja": "親フォルダ",
+      "zh": "上级"
+    },
+    "home": {
+      "ko": "홈",
+      "en": "Home",
+      "ja": "ホーム",
+      "zh": "主目录"
+    },
+    "empty": {
+      "ko": "하위 폴더가 없습니다",
+      "en": "No subdirectories",
+      "ja": "サブフォルダがありません",
+      "zh": "没有子文件夹"
+    },
+    "loading": {
+      "ko": "불러오는 중...",
+      "en": "Loading...",
+      "ja": "読み込み中...",
+      "zh": "加载中..."
+    },
+    "error": {
+      "ko": "폴더를 불러올 수 없습니다",
+      "en": "Failed to load folders",
+      "ja": "フォルダを読み込めませんでした",
+      "zh": "无法加载文件夹"
+    },
+    "browse": {
+      "ko": "찾아보기",
+      "en": "Browse",
+      "ja": "参照",
+      "zh": "浏览"
+    }
+  },
+  "language": {
+    "label": {
+      "ko": "언어",
+      "en": "Language",
+      "ja": "言語",
+      "zh": "语言"
+    },
+    "description": {
+      "ko": "Gemvis 인터페이스 언어를 선택하세요.",
+      "en": "Choose the Gemvis interface language.",
+      "ja": "Gemvis のインターフェース言語を選択してください。",
+      "zh": "选择 Gemvis 界面语言。"
+    }
+  },
+  "settings": {
+    "title": {
+      "ko": "설정",
+      "en": "Settings",
+      "ja": "設定",
+      "zh": "设置"
+    },
+    "languageSection": {
+      "ko": "언어",
+      "en": "Language",
+      "ja": "言語",
+      "zh": "语言"
+    },
+    "dockSection": {
+      "ko": "메뉴 위치",
+      "en": "Dock position",
+      "ja": "メニュー位置",
+      "zh": "菜单位置"
+    },
+    "dockTop": {
+      "ko": "위",
+      "en": "Top",
+      "ja": "上",
+      "zh": "上"
+    },
+    "dockBottom": {
+      "ko": "아래",
+      "en": "Bottom",
+      "ja": "下",
+      "zh": "下"
+    },
+    "dockLeft": {
+      "ko": "왼쪽",
+      "en": "Left",
+      "ja": "左",
+      "zh": "左"
+    },
+    "dockRight": {
+      "ko": "오른쪽",
+      "en": "Right",
+      "ja": "右",
+      "zh": "右"
+    },
+    "watchSection": {
+      "ko": "모니터링 폴더",
+      "en": "Monitored Folders",
+      "ja": "監視フォルダ",
+      "zh": "监视文件夹"
+    },
+    "watchToggleLabel": {
+      "ko": "파일 감시",
+      "en": "File watcher",
+      "ja": "ファイル監視",
+      "zh": "文件监视"
+    },
+    "watchToggleOn": {
+      "ko": "감시 켜짐",
+      "en": "Watching",
+      "ja": "監視中",
+      "zh": "监视中"
+    },
+    "watchToggleOff": {
+      "ko": "감시 꺼짐",
+      "en": "Off",
+      "ja": "停止中",
+      "zh": "已停止"
+    },
+    "controlSection": {
+      "ko": "파일 감시 제어",
+      "en": "File Watcher Control",
+      "ja": "ファイル監視の制御",
+      "zh": "文件监视控制"
+    },
+    "scheduleSection": {
+      "ko": "업무 시간 스케줄",
+      "en": "Work Schedule",
+      "ja": "勤務時間スケジュール",
+      "zh": "工作时间安排"
+    },
+    "llmSection": {
+      "ko": "LLM 샘플링 설정",
+      "en": "LLM Sampling Parameters",
+      "ja": "LLMサンプリング設定",
+      "zh": "LLM采样参数"
+    },
+    "dataSection": {
+      "ko": "데이터 관리",
+      "en": "Data Management",
+      "ja": "データ管理",
+      "zh": "数据管理"
+    },
+    "save": {
+      "ko": "저장",
+      "en": "Save",
+      "ja": "保存",
+      "zh": "保存"
+    },
+    "saved": {
+      "ko": "저장되었습니다.",
+      "en": "Saved.",
+      "ja": "保存しました。",
+      "zh": "已保存。"
+    },
+    "error": {
+      "ko": "오류가 발생했습니다.",
+      "en": "An error occurred.",
+      "ja": "エラーが発生しました。",
+      "zh": "发生错误。"
+    },
+    "watchDescription": {
+      "ko": "체크된 폴더만 감시합니다. 기본: 다운로드 / 사진 / 문서.",
+      "en": "Only checked folders are watched. Defaults: Downloads / Pictures / Documents.",
+      "ja": "チェックしたフォルダのみ監視します。既定: ダウンロード / 画像 / ドキュメント。",
+      "zh": "仅监视已勾选的文件夹。默认:下载 / 图片 / 文档。"
+    },
+    "dirsEmpty": {
+      "ko": "폴더가 없습니다. 아래에서 추가하세요.",
+      "en": "No folders. Add one below.",
+      "ja": "フォルダがありません。下から追加してください。",
+      "zh": "暂无文件夹。请在下方添加。"
+    },
+    "dirsActiveBadge": {
+      "ko": "{{count}}개 활성",
+      "en": "{{count}} active",
+      "ja": "{{count}} 件有効",
+      "zh": "{{count}} 个已启用"
+    },
+    "dirAddPlaceholder": {
+      "ko": "추가할 폴더 절대경로 (예: C:\\Users\\me\\Desktop)",
+      "en": "Absolute path to add (e.g. C:\\Users\\me\\Desktop)",
+      "ja": "追加するフォルダの絶対パス (例: C:\\Users\\me\\Desktop)",
+      "zh": "要添加的文件夹绝对路径(例如 C:\\Users\\me\\Desktop)"
+    },
+    "dirAdd": {
+      "ko": "+ 폴더 추가",
+      "en": "+ Add folder",
+      "ja": "+ フォルダを追加",
+      "zh": "+ 添加文件夹"
+    },
+    "watchSave": {
+      "ko": "설정 저장 (감시 재시작)",
+      "en": "Save settings (restart watcher)",
+      "ja": "設定を保存 (監視を再起動)",
+      "zh": "保存设置(重启监视)"
+    },
+    "dirRemove": {
+      "ko": "목록에서 제거",
+      "en": "Remove from list",
+      "ja": "一覧から削除",
+      "zh": "从列表中移除"
+    },
+    "dirRemoveAria": {
+      "ko": "{{path}} 제거",
+      "en": "Remove {{path}}",
+      "ja": "{{path}} を削除",
+      "zh": "移除 {{path}}"
+    },
+    "dirAlreadyExists": {
+      "ko": "이미 목록에 있는 폴더입니다.",
+      "en": "This folder is already in the list.",
+      "ja": "すでに一覧に存在するフォルダです。",
+      "zh": "该文件夹已在列表中。"
+    },
+    "saveFailed": {
+      "ko": "설정 저장 실패",
+      "en": "Failed to save settings",
+      "ja": "設定の保存に失敗しました",
+      "zh": "保存设置失败"
+    },
+    "statusLabel": {
+      "ko": "상태",
+      "en": "Status",
+      "ja": "状態",
+      "zh": "状态"
+    },
+    "statusRunning": {
+      "ko": "실행 중",
+      "en": "Running",
+      "ja": "実行中",
+      "zh": "运行中"
+    },
+    "statusStopped": {
+      "ko": "중지됨",
+      "en": "Stopped",
+      "ja": "停止中",
+      "zh": "已停止"
+    },
+    "statusLoading": {
+      "ko": "확인 중…",
+      "en": "Checking…",
+      "ja": "確認中…",
+      "zh": "正在检查…"
+    },
+    "statusDirCount": {
+      "ko": "감시 폴더 수",
+      "en": "Watched folders",
+      "ja": "監視フォルダ数",
+      "zh": "监视文件夹数"
+    },
+    "statusProcessed": {
+      "ko": "처리된 파일",
+      "en": "Processed files",
+      "ja": "処理済みファイル",
+      "zh": "已处理文件"
+    },
+    "statusWatchedFiles": {
+      "ko": "감시 대상 파일",
+      "en": "Watched files",
+      "ja": "監視対象ファイル",
+      "zh": "监视文件"
+    },
+    "statusWatchedFilesHint": {
+      "ko": "감시 폴더에 실제로 존재하는 지원 파일 수 (node_modules, .git 등 제외)",
+      "en": "Supported files actually present in watched folders (excludes node_modules, .git, etc.)",
+      "ja": "監視フォルダに実際に存在するサポートファイル数 (node_modules, .git などは除外)",
+      "zh": "监视文件夹中实际存在的支持文件数(不含 node_modules, .git 等)"
+    },
+    "statusAnalyzedFiles": {
+      "ko": "분석된 파일",
+      "en": "Analyzed files",
+      "ja": "分析済みファイル",
+      "zh": "已分析文件"
+    },
+    "statusInsightExtractedHint": {
+      "ko": "GemInsight 분석이 완료된 파일 수 / 감시 대상 총 파일 수",
+      "en": "Files with completed GemInsight analysis / total watched files",
+      "ja": "GemInsight 分析が完了したファイル数 / 監視対象の合計ファイル数",
+      "zh": "已完成 GemInsight 分析的文件数 / 监视的总文件数"
+    },
+    "processingActive": {
+      "ko": "분석 중",
+      "en": "Analyzing",
+      "ja": "分析中",
+      "zh": "分析中"
+    },
+    "processingActiveHint": {
+      "ko": "{{count}}개 파일 분석 중",
+      "en": "{{count}} files analyzing",
+      "ja": "{{count}} 件のファイルを分析中",
+      "zh": "正在分析 {{count}} 个文件"
+    },
+    "watchStart": {
+      "ko": "감시 시작",
+      "en": "Start watching",
+      "ja": "監視を開始",
+      "zh": "开始监视"
+    },
+    "watchStop": {
+      "ko": "감시 중지",
+      "en": "Stop watching",
+      "ja": "監視を停止",
+      "zh": "停止监视"
+    },
+    "watchScan": {
+      "ko": "기존 파일 스캔",
+      "en": "Scan existing files",
+      "ja": "既存ファイルをスキャン",
+      "zh": "扫描已有文件"
+    },
+    "extractAction": {
+      "ko": "인사이트 추출",
+      "en": "Extract insights",
+      "ja": "インサイト抽出",
+      "zh": "提取洞察"
+    },
+    "extractAll": {
+      "ko": "전체 추출",
+      "en": "Extract all",
+      "ja": "すべて抽出",
+      "zh": "全部提取"
+    },
+    "extractAllDesc": {
+      "ko": "문서 + 이미지",
+      "en": "Documents + images",
+      "ja": "ドキュメント + 画像",
+      "zh": "文档 + 图像"
+    },
+    "extractDocuments": {
+      "ko": "문서만 추출",
+      "en": "Documents only",
+      "ja": "ドキュメントのみ",
+      "zh": "仅文档"
+    },
+    "extractDocumentsDesc": {
+      "ko": "텍스트 / PDF / 마크다운",
+      "en": "Text / PDF / Markdown",
+      "ja": "テキスト / PDF / Markdown",
+      "zh": "文本 / PDF / Markdown"
+    },
+    "extractImages": {
+      "ko": "이미지만 추출",
+      "en": "Images only",
+      "ja": "画像のみ",
+      "zh": "仅图像"
+    },
+    "extractImagesDesc": {
+      "ko": "Vision (PNG / JPG / GIF / ...)",
+      "en": "Vision (PNG / JPG / GIF / ...)",
+      "ja": "Vision (PNG / JPG / GIF / ...)",
+      "zh": "Vision (PNG / JPG / GIF / ...)"
+    },
+    "scanSkeleton": {
+      "ko": "디스크 다시 스캔",
+      "en": "Re-scan disk",
+      "ja": "ディスク再スキャン",
+      "zh": "重新扫描磁盘"
+    },
+    "scanSkeletonDesc": {
+      "ko": "AI 호출 없이 파일 목록만 갱신",
+      "en": "Refresh file list (no AI)",
+      "ja": "AI なしでファイル一覧のみ更新",
+      "zh": "仅刷新文件列表(不调用 AI)"
+    },
+    "analyzedFilesSection": {
+      "ko": "분석 결과 파일",
+      "en": "Analyzed files",
+      "ja": "分析結果ファイル",
+      "zh": "分析结果文件"
+    },
+    "dataDescription": {
+      "ko": "모든 분석 데이터는 다음 폴더에 저장됩니다:",
+      "en": "All analysis data is stored in:",
+      "ja": "すべての分析データは以下のフォルダに保存されます:",
+      "zh": "所有分析数据保存在以下文件夹中:"
+    },
+    "dataFiles": {
+      "ko": "- graph.ttl (지식그래프), events.ttl (이벤트 로그), scheduler_state.json",
+      "en": "- graph.ttl (knowledge graph), events.ttl (event log), scheduler_state.json",
+      "ja": "- graph.ttl (ナレッジグラフ)、events.ttl (イベントログ)、scheduler_state.json",
+      "zh": "- graph.ttl(知识图谱)、events.ttl(事件日志)、scheduler_state.json"
+    },
+    "dataClearConfirm": {
+      "ko": "모든 분석 데이터를 삭제하고 처음부터 다시 시작합니다. 계속하시겠습니까?",
+      "en": "This will delete all analysis data and start fresh. Continue?",
+      "ja": "すべての分析データを削除して最初からやり直します。続行しますか?",
+      "zh": "将删除所有分析数据并从头开始。是否继续?"
+    },
+    "dataClear": {
+      "ko": "🗑️ 모든 데이터 초기화 & 재스캔",
+      "en": "🗑️ Reset all data & rescan",
+      "ja": "🗑️ すべてのデータをリセットして再スキャン",
+      "zh": "🗑️ 重置所有数据并重新扫描"
+    },
+    "dataClearNote": {
+      "ko": "원본 파일은 삭제되지 않으며, 분석 데이터만 초기화됩니다. 초기화 후 자동으로 파일 재스캔이 시작됩니다.",
+      "en": "Original files are not deleted — only analysis data is reset. A rescan starts automatically afterwards.",
+      "ja": "元のファイルは削除されず、分析データのみが初期化されます。リセット後、自動的に再スキャンが開始されます。",
+      "zh": "不会删除原始文件,仅重置分析数据。重置后会自动开始重新扫描。"
+    },
+    "dataClearFailed": {
+      "ko": "데이터 초기화 실패",
+      "en": "Failed to reset data",
+      "ja": "データのリセットに失敗しました",
+      "zh": "重置数据失败"
+    },
+    "resetOnboarding": {
+      "ko": "온보딩 다시 보기",
+      "en": "Re-run onboarding",
+      "ja": "オンボーディングを再表示",
+      "zh": "重新查看引导"
+    },
+    "imageAnalysisSection": {
+      "ko": "이미지 분석",
+      "en": "Image Analysis",
+      "ja": "画像分析",
+      "zh": "图像分析"
+    },
+    "imageAnalysisToggleLabel": {
+      "ko": "이미지 파일 분석",
+      "en": "Image file analysis",
+      "ja": "画像ファイル分析",
+      "zh": "图像文件分析"
+    },
+    "imageAnalysisToggleOn": {
+      "ko": "활성화",
+      "en": "Enabled",
+      "ja": "有効",
+      "zh": "已启用"
+    },
+    "imageAnalysisToggleOff": {
+      "ko": "비활성화",
+      "en": "Disabled",
+      "ja": "無効",
+      "zh": "已禁用"
+    },
+    "imageAnalysisDesc": {
+      "ko": "이미지 파일의 내용을 AI로 분석합니다. 분석 시간과 VRAM 사용량이 늘어날 수 있습니다.",
+      "en": "Analyze image file contents with AI. May increase analysis time and VRAM usage.",
+      "ja": "画像ファイルの内容を AI で分析します。分析時間と VRAM 使用量が増える場合があります。",
+      "zh": "使用 AI 分析图像文件内容。可能会增加分析时间和显存使用量。"
+    },
+    "webSearchSection": {
+      "ko": "웹 검색",
+      "en": "Web search",
+      "ja": "ウェブ検索",
+      "zh": "网页搜索"
+    },
+    "webSearchDesc": {
+      "ko": "대화 검색 시 DuckDuckGo로 웹 검색을 함께 수행합니다. 검색어 텍스트가 외부 서버(duckduckgo.com)로 전송됩니다 — 파일 내용은 전송되지 않습니다.",
+      "en": "Run a DuckDuckGo web search alongside file search. The query text is sent to duckduckgo.com — file contents are not.",
+      "ja": "チャット検索時に DuckDuckGo でウェブ検索も実行します。クエリのテキストが duckduckgo.com に送信されます — ファイル内容は送信されません。",
+      "zh": "在对话搜索时同时执行 DuckDuckGo 网页搜索。查询文本会发送到 duckduckgo.com — 文件内容不会被发送。"
+    },
+    "webSearchToggleLabel": {
+      "ko": "웹 검색",
+      "en": "Web search",
+      "ja": "ウェブ検索",
+      "zh": "网页搜索"
+    },
+    "webSearchToggleOn": {
+      "ko": "활성",
+      "en": "Enabled",
+      "ja": "有効",
+      "zh": "已启用"
+    },
+    "webSearchToggleOff": {
+      "ko": "비활성",
+      "en": "Disabled",
+      "ja": "無効",
+      "zh": "已禁用"
+    },
+    "imageAnalysisScanBtn": {
+      "ko": "이미지 파일만 분석",
+      "en": "Analyze images only",
+      "ja": "画像ファイルのみ分析",
+      "zh": "仅分析图像文件"
+    },
+    "imageAnalysisScanDesc": {
+      "ko": "이전에 건너뛴 이미지 파일들을 분석합니다.",
+      "en": "Analyze image files that were previously skipped.",
+      "ja": "以前スキップした画像ファイルを分析します。",
+      "zh": "分析之前跳过的图像文件。"
+    },
+    "fileList": {
+      "ko": "감시 파일 목록 ({{total}}개, 분석 완료: {{analyzed}}개)",
+      "en": "Watched files ({{total}} total, {{analyzed}} analyzed)",
+      "ja": "監視ファイル一覧 ({{total}} 件中 {{analyzed}} 件分析済み)",
+      "zh": "监视文件列表(共 {{total}} 个,已分析 {{analyzed}} 个)"
+    },
+    "filesEmpty": {
+      "ko": "감시 중인 파일이 없습니다.",
+      "en": "No files are being watched.",
+      "ja": "監視中のファイルはありません。",
+      "zh": "暂无正在监视的文件。"
+    },
+    "scheduleDescription": {
+      "ko": "요일별 업무 시간. 비활성화된 요일 또는 설정 시간 외 활동은 <strong>개인 활동</strong>으로 분류됩니다.",
+      "en": "Working hours per weekday. Activity outside the set hours (or on disabled days) is classified as <strong>personal</strong>.",
+      "ja": "曜日ごとの勤務時間。無効化した曜日や設定時間外の活動は <strong>個人活動</strong> として分類されます。",
+      "zh": "每周各日的工作时间。在停用日或设定时间之外的活动会被归类为 <strong>个人活动</strong>。"
+    },
+    "scheduleSave": {
+      "ko": "스케줄 저장",
+      "en": "Save schedule",
+      "ja": "スケジュールを保存",
+      "zh": "保存安排"
+    },
+    "scheduleSaved": {
+      "ko": "업무 스케줄이 저장되었습니다.",
+      "en": "Work schedule saved.",
+      "ja": "勤務スケジュールを保存しました。",
+      "zh": "工作安排已保存。"
+    },
+    "scheduleSaveFailed": {
+      "ko": "스케줄 저장 실패",
+      "en": "Failed to save schedule",
+      "ja": "スケジュールの保存に失敗しました",
+      "zh": "保存安排失败"
+    },
+    "days": {
+      "monday":    { "ko": "월", "en": "Mon", "ja": "月", "zh": "一" },
+      "tuesday":   { "ko": "화", "en": "Tue", "ja": "火", "zh": "二" },
+      "wednesday": { "ko": "수", "en": "Wed", "ja": "水", "zh": "三" },
+      "thursday":  { "ko": "목", "en": "Thu", "ja": "木", "zh": "四" },
+      "friday":    { "ko": "금", "en": "Fri", "ja": "金", "zh": "五" },
+      "saturday":  { "ko": "토", "en": "Sat", "ja": "土", "zh": "六" },
+      "sunday":    { "ko": "일", "en": "Sun", "ja": "日", "zh": "日" }
+    }
+  },
+  "nav": {
+    "dashboard": {
+      "ko": "대시보드",
+      "en": "Dashboard",
+      "ja": "ダッシュボード",
+      "zh": "仪表板"
+    },
+    "calendar": {
+      "ko": "캘린더",
+      "en": "Calendar",
+      "ja": "カレンダー",
+      "zh": "日历"
+    },
+    "graph": {
+      "ko": "그래프 뷰",
+      "en": "Graph View",
+      "ja": "グラフビュー",
+      "zh": "图谱视图"
+    },
+    "search": {
+      "ko": "대화 검색",
+      "en": "Search",
+      "ja": "対話検索",
+      "zh": "对话检索"
+    },
+    "settings": {
+      "ko": "설정",
+      "en": "Settings",
+      "ja": "設定",
+      "zh": "设置"
+    },
+    "collapseRail": {
+      "ko": "사이드바 접기",
+      "en": "Collapse sidebar",
+      "ja": "サイドバーを折りたたむ",
+      "zh": "折叠侧边栏"
+    },
+    "expandRail": {
+      "ko": "사이드바 펼치기",
+      "en": "Expand sidebar",
+      "ja": "サイドバーを展開",
+      "zh": "展开侧边栏"
+    },
+    "showTopbar": {
+      "ko": "검색 바 표시",
+      "en": "Show search bar",
+      "ja": "検索バーを表示",
+      "zh": "显示搜索栏"
+    },
+    "hideTopbar": {
+      "ko": "검색 바 숨기기",
+      "en": "Hide search bar",
+      "ja": "検索バーを非表示",
+      "zh": "隐藏搜索栏"
+    },
+    "showStatusbar": {
+      "ko": "상태 바 표시",
+      "en": "Show status bar",
+      "ja": "ステータスバーを表示",
+      "zh": "显示状态栏"
+    },
+    "hideStatusbar": {
+      "ko": "상태 바 숨기기",
+      "en": "Hide status bar",
+      "ja": "ステータスバーを非表示",
+      "zh": "隐藏状态栏"
+    }
+  },
+  "topbar": {
+    "searchOpen": {
+      "ko": "검색 열기",
+      "en": "Open search",
+      "ja": "検索を開く",
+      "zh": "打开搜索"
+    },
+    "searchPlaceholder": {
+      "ko": "검색하거나 명령어 입력...",
+      "en": "Search or type a command...",
+      "ja": "検索またはコマンドを入力...",
+      "zh": "搜索或输入命令..."
+    }
+  },
+  "spotlight": {
+    "placeholder": {
+      "ko": "파일, 사람, 장소, 날짜로 검색...",
+      "en": "Search by file, person, place, or date...",
+      "ja": "ファイル・人・場所・日付で検索...",
+      "zh": "按文件、人物、地点、日期搜索..."
+    },
+    "badgeLocal": {
+      "ko": "🔒 로컬",
+      "en": "🔒 Local",
+      "ja": "🔒 ローカル",
+      "zh": "🔒 本地"
+    },
+    "hintTitle": {
+      "ko": "검색어 입력 후 Enter",
+      "en": "Type a query, then press Enter",
+      "ja": "キーワードを入力して Enter",
+      "zh": "输入关键词后按 Enter"
+    },
+    "example1": {
+      "ko": "💡 \"회의\"",
+      "en": "💡 \"meeting\"",
+      "ja": "💡 「会議」",
+      "zh": "💡 \"会议\""
+    },
+    "example2": {
+      "ko": "💡 \"지난달 김과장이랑 간 식당\"",
+      "en": "💡 \"the restaurant I went to with Kim last month\"",
+      "ja": "💡 「先月キムさんと行ったレストラン」",
+      "zh": "💡 \"上个月和金科长去的餐厅\""
+    },
+    "example3": {
+      "ko": "💡 \"해커톤 관련 파일들\"",
+      "en": "💡 \"files about the hackathon\"",
+      "ja": "💡 「ハッカソン関連のファイル」",
+      "zh": "💡 \"与黑客松相关的文件\""
+    },
+    "loading": {
+      "ko": "로컬 AI가 검색 중...",
+      "en": "Local AI is searching...",
+      "ja": "ローカル AI が検索中...",
+      "zh": "本地 AI 正在搜索..."
+    },
+    "answerLabel": {
+      "ko": "AI 답변",
+      "en": "AI answer",
+      "ja": "AI の回答",
+      "zh": "AI 回答"
+    },
+    "relatedFiles": {
+      "ko": "관련 파일 {{count}}개",
+      "en": "{{count}} related files",
+      "ja": "関連ファイル {{count}} 件",
+      "zh": "相关文件 {{count}} 个"
+    },
+    "empty": {
+      "ko": "검색 결과가 없습니다",
+      "en": "No results",
+      "ja": "検索結果がありません",
+      "zh": "无搜索结果"
+    },
+    "searchFailed": {
+      "ko": "검색 실패",
+      "en": "Search failed",
+      "ja": "検索に失敗しました",
+      "zh": "搜索失败"
+    },
+    "openFolderFailed": {
+      "ko": "폴더 열기 실패",
+      "en": "Failed to open folder",
+      "ja": "フォルダを開けませんでした",
+      "zh": "无法打开文件夹"
+    },
+    "footerNavigate": {
+      "ko": "이동",
+      "en": "Navigate",
+      "ja": "移動",
+      "zh": "移动"
+    },
+    "footerSearch": {
+      "ko": "검색",
+      "en": "Search",
+      "ja": "検索",
+      "zh": "搜索"
+    },
+    "footerOpenFolder": {
+      "ko": "폴더 열기",
+      "en": "Open folder",
+      "ja": "フォルダを開く",
+      "zh": "打开文件夹"
+    },
+    "footerShowGraph": {
+      "ko": "그래프 보기",
+      "en": "Show in graph",
+      "ja": "グラフで表示",
+      "zh": "在图谱中显示"
+    },
+    "footerClose": {
+      "ko": "닫기",
+      "en": "Close",
+      "ja": "閉じる",
+      "zh": "关闭"
+    }
+  },
+  "scan": {
+    "statusScanning": {
+      "ko": "파일 분석 중",
+      "en": "Analyzing files",
+      "ja": "ファイルを分析中",
+      "zh": "正在分析文件"
+    },
+    "statusStarting": {
+      "ko": "분석 준비 중",
+      "en": "Preparing analysis",
+      "ja": "分析を準備中",
+      "zh": "正在准备分析"
+    },
+    "startingHint": {
+      "ko": "파일 목록을 확인하고 분석 대상을 준비하고 있습니다.",
+      "en": "Checking files and preparing analysis targets.",
+      "ja": "ファイル一覧を確認し、分析対象を準備しています。",
+      "zh": "正在检查文件并准备分析目标。"
+    },
+    "statusPaused": {
+      "ko": "일시 정지됨",
+      "en": "Paused",
+      "ja": "一時停止中",
+      "zh": "已暂停"
+    },
+    "statusDone": {
+      "ko": "스캔 완료",
+      "en": "Scan complete",
+      "ja": "スキャン完了",
+      "zh": "扫描完成"
+    },
+    "statusError": {
+      "ko": "스캔 오류",
+      "en": "Scan error",
+      "ja": "スキャンエラー",
+      "zh": "扫描出错"
+    },
+    "analyzingLabel": {
+      "ko": "분석 중",
+      "en": "Analyzing",
+      "ja": "分析中",
+      "zh": "分析中"
+    },
+    "currentFile": {
+      "ko": "현재 파일",
+      "en": "Current file",
+      "ja": "現在のファイル",
+      "zh": "当前文件"
+    },
+    "progressLabel": {
+      "ko": "진행",
+      "en": "Progress",
+      "ja": "進捗",
+      "zh": "进度"
+    },
+    "remainingLabel": {
+      "ko": "남음",
+      "en": "Remaining",
+      "ja": "残り",
+      "zh": "剩余"
+    },
+    "elapsedLabel": {
+      "ko": "경과",
+      "en": "Elapsed",
+      "ja": "経過",
+      "zh": "已用时"
+    },
+    "dismiss": {
+      "ko": "닫기",
+      "en": "Dismiss",
+      "ja": "閉じる",
+      "zh": "关闭"
+    },
+    "noopAll": {
+      "ko": "추가 분석할 항목이 없어요. 모든 파일이 이미 처리되었습니다.",
+      "en": "Nothing to analyze — every file is already processed.",
+      "ja": "追加で分析する項目はありません。すべてのファイルが処理済みです。",
+      "zh": "没有需要分析的内容 — 所有文件都已处理。"
+    },
+    "noopDocuments": {
+      "ko": "추가로 분석할 문서가 없어요.",
+      "en": "No new documents to analyze.",
+      "ja": "追加で分析するドキュメントはありません。",
+      "zh": "没有需要分析的新文档。"
+    },
+    "noopImages": {
+      "ko": "추가로 분석할 이미지가 없어요.",
+      "en": "No new images to analyze.",
+      "ja": "追加で分析する画像はありません。",
+      "zh": "没有需要分析的新图像。"
+    },
+    "noopSkeleton": {
+      "ko": "디스크에서 새로 발견한 파일이 없어요.",
+      "en": "No new files found on disk.",
+      "ja": "ディスク上に新しいファイルはありません。",
+      "zh": "磁盘上没有发现新文件。"
+    },
+    "etaLabel": {
+      "ko": "예상 남은 시간",
+      "en": "ETA",
+      "ja": "残り時間",
+      "zh": "预计剩余时间"
+    },
+    "speedLabel": {
+      "ko": "처리 속도",
+      "en": "Speed",
+      "ja": "処理速度",
+      "zh": "处理速度"
+    },
+    "speedAvg": {
+      "ko": "평균 {{n}}초/파일",
+      "en": "avg {{n}}s/file",
+      "ja": "平均 {{n}}秒/ファイル",
+      "zh": "平均 {{n}} 秒/文件"
+    },
+    "pause": {
+      "ko": "일시 정지",
+      "en": "Pause",
+      "ja": "一時停止",
+      "zh": "暂停"
+    },
+    "resume": {
+      "ko": "재개",
+      "en": "Resume",
+      "ja": "再開",
+      "zh": "继续"
+    },
+    "completedCount": {
+      "ko": "{{count}}개 파일 분석 완료 (소요: {{time}})",
+      "en": "{{count}} files analyzed (elapsed: {{time}})",
+      "ja": "{{count}} 件のファイルを分析しました (所要: {{time}})",
+      "zh": "已分析 {{count}} 个文件(耗时:{{time}})"
+    },
+    "timeSeconds": {
+      "ko": "{{n}}초",
+      "en": "{{n}}s",
+      "ja": "{{n}}秒",
+      "zh": "{{n}} 秒"
+    },
+    "timeMinSec": {
+      "ko": "{{m}}분 {{s}}초",
+      "en": "{{m}}m {{s}}s",
+      "ja": "{{m}}分 {{s}}秒",
+      "zh": "{{m}} 分 {{s}} 秒"
+    },
+    "timeHourMin": {
+      "ko": "{{h}}시간 {{m}}분",
+      "en": "{{h}}h {{m}}m",
+      "ja": "{{h}}時間 {{m}}分",
+      "zh": "{{h}} 小时 {{m}} 分"
+    }
+  },
+  "common": {
+    "loading": {
+      "ko": "로딩 중",
+      "en": "Loading",
+      "ja": "読み込み中",
+      "zh": "加载中"
+    },
+    "loadingDots": {
+      "ko": "로딩 중...",
+      "en": "Loading...",
+      "ja": "読み込み中...",
+      "zh": "加载中..."
+    },
+    "refresh": {
+      "ko": "새로고침",
+      "en": "Refresh",
+      "ja": "更新",
+      "zh": "刷新"
+    },
+    "cancel": {
+      "ko": "취소",
+      "en": "Cancel",
+      "ja": "キャンセル",
+      "zh": "取消"
+    },
+    "delete": {
+      "ko": "삭제",
+      "en": "Delete",
+      "ja": "削除",
+      "zh": "删除"
+    },
+    "prev": {
+      "ko": "← 이전",
+      "en": "← Prev",
+      "ja": "← 前へ",
+      "zh": "← 上一页"
+    },
+    "next": {
+      "ko": "다음 →",
+      "en": "Next →",
+      "ja": "次へ →",
+      "zh": "下一页 →"
+    },
+    "all": {
+      "ko": "전체",
+      "en": "All",
+      "ja": "すべて",
+      "zh": "全部"
+    }
+  },
+  "dashboard": {
+    "subtitle": {
+      "ko": "모든 데이터가 이 기기 안에 저장됩니다",
+      "en": "All data stays on this device",
+      "ja": "すべてのデータはこの端末に保存されます",
+      "zh": "所有数据均保存在本设备"
+    },
+    "loadError": {
+      "ko": "데이터를 불러올 수 없습니다.",
+      "en": "Failed to load data.",
+      "ja": "データを読み込めませんでした。",
+      "zh": "无法加载数据。"
+    },
+    "privacyTitle": {
+      "ko": "On-device AI",
+      "en": "On-device AI",
+      "ja": "オンデバイス AI",
+      "zh": "本地端 AI"
+    },
+    "privacyDesc": {
+      "ko": "파일 내용 · 검색 · 그래프 전부 로컬 저장. 외부 서버로 전송되지 않습니다.",
+      "en": "File contents, search, and graph all stay local. Nothing is sent to external servers.",
+      "ja": "ファイル内容・検索・グラフはすべてローカル保存。外部サーバには送信されません。",
+      "zh": "文件内容、搜索与图谱全部本地保存,不发送到外部服务器。"
+    },
+    "analyzedLabel": {
+      "ko": "분석 완료",
+      "en": "Analyzed",
+      "ja": "分析完了",
+      "zh": "已分析"
+    },
+    "completedRatio": {
+      "ko": "완료 / 전체 파일",
+      "en": "Completed / total files",
+      "ja": "完了 / 全ファイル",
+      "zh": "已完成 / 全部文件"
+    },
+    "nodeTypeDist": {
+      "ko": "노드 타입 분포",
+      "en": "Node type distribution",
+      "ja": "ノードタイプ分布",
+      "zh": "节点类型分布"
+    },
+    "fileCategory": {
+      "ko": "파일 카테고리",
+      "en": "File categories",
+      "ja": "ファイルカテゴリ",
+      "zh": "文件分类"
+    },
+    "noAnalyzedYet": {
+      "ko": "아직 분석된 파일이 없습니다.",
+      "en": "No files analyzed yet.",
+      "ja": "まだ分析されたファイルがありません。",
+      "zh": "暂无已分析的文件。"
+    },
+    "fileList": {
+      "ko": "전체 파일 목록 ({{total}}개)",
+      "en": "All files ({{total}})",
+      "ja": "全ファイル一覧 ({{total}} 件)",
+      "zh": "全部文件列表(共 {{total}} 个)"
+    },
+    "emptyHint": {
+      "ko": "감시 폴더에 파일을 추가하면 자동으로 분석됩니다.",
+      "en": "Files added to watched folders are analyzed automatically.",
+      "ja": "監視フォルダにファイルを追加すると自動的に分析されます。",
+      "zh": "添加到监视文件夹的文件会被自动分析。"
+    },
+    "statusPending": {
+      "ko": "분석 대기",
+      "en": "Pending",
+      "ja": "分析待ち",
+      "zh": "等待分析"
+    },
+    "statusProcessing": {
+      "ko": "분석 중",
+      "en": "Processing",
+      "ja": "分析中",
+      "zh": "分析中"
+    },
+    "statusCompleted": {
+      "ko": "완료",
+      "en": "Done",
+      "ja": "完了",
+      "zh": "完成"
+    },
+    "statusFailed": {
+      "ko": "실패",
+      "en": "Failed",
+      "ja": "失敗",
+      "zh": "失败"
+    },
+    "summaryPending": {
+      "ko": "분석 대기 중",
+      "en": "Waiting to analyze",
+      "ja": "分析待ち",
+      "zh": "等待分析"
+    },
+    "summaryProcessing": {
+      "ko": "분석 중…",
+      "en": "Analyzing…",
+      "ja": "分析中…",
+      "zh": "分析中…"
+    },
+    "colStatus": {
+      "ko": "상태",
+      "en": "Status",
+      "ja": "状態",
+      "zh": "状态"
+    },
+    "colFile": {
+      "ko": "파일",
+      "en": "File",
+      "ja": "ファイル",
+      "zh": "文件"
+    },
+    "colCategory": {
+      "ko": "분류",
+      "en": "Category",
+      "ja": "分類",
+      "zh": "分类"
+    },
+    "colSummary": {
+      "ko": "요약",
+      "en": "Summary",
+      "ja": "要約",
+      "zh": "摘要"
+    },
+    "colCreated": {
+      "ko": "생성일",
+      "en": "Created",
+      "ja": "作成日",
+      "zh": "创建日期"
+    },
+    "colModified": {
+      "ko": "수정일",
+      "en": "Modified",
+      "ja": "更新日",
+      "zh": "修改日期"
+    },
+    "colAdded": {
+      "ko": "추가일",
+      "en": "Added",
+      "ja": "追加日",
+      "zh": "添加日期"
+    }
+  },
+  "chat": {
+    "title": {
+      "ko": "대화형 검색",
+      "en": "Conversational Search",
+      "ja": "対話型検索",
+      "zh": "对话式搜索"
+    },
+    "sessions": {
+      "label": {
+        "ko": "대화 목록",
+        "en": "Conversations",
+        "ja": "会話一覧",
+        "zh": "对话列表"
+      },
+      "new": {
+        "ko": "새 대화",
+        "en": "New chat",
+        "ja": "新しい会話",
+        "zh": "新对话"
+      },
+      "messages": {
+        "ko": "메시지",
+        "en": "messages",
+        "ja": "メッセージ",
+        "zh": "条消息"
+      },
+      "empty": {
+        "ko": "비어있음",
+        "en": "Empty",
+        "ja": "空",
+        "zh": "空"
+      },
+      "rename": {
+        "ko": "이름 변경",
+        "en": "Rename",
+        "ja": "名前を変更",
+        "zh": "重命名"
+      },
+      "delete": {
+        "ko": "삭제",
+        "en": "Delete",
+        "ja": "削除",
+        "zh": "删除"
+      },
+      "deleteConfirm": {
+        "ko": "이 대화를 삭제할까요?",
+        "en": "Delete this conversation?",
+        "ja": "この会話を削除しますか?",
+        "zh": "要删除这个对话吗?"
+      },
+      "show": {
+        "ko": "대화 목록 표시",
+        "en": "Show conversations",
+        "ja": "会話一覧を表示",
+        "zh": "显示对话列表"
+      },
+      "hide": {
+        "ko": "대화 목록 숨기기",
+        "en": "Hide conversations",
+        "ja": "会話一覧を非表示",
+        "zh": "隐藏对话列表"
+      }
+    },
+    "resetTitle": {
+      "ko": "대화 초기화",
+      "en": "Reset conversation",
+      "ja": "会話をリセット",
+      "zh": "重置对话"
+    },
+    "reset": {
+      "ko": "대화 비우기",
+      "en": "Clear chat",
+      "ja": "会話をクリア",
+      "zh": "清空对话"
+    },
+    "hideDebug": {
+      "ko": "디버그 숨기기 ›",
+      "en": "Hide debug ›",
+      "ja": "デバッグを非表示 ›",
+      "zh": "隐藏调试 ›"
+    },
+    "showDebug": {
+      "ko": "‹ 쿼리 디버그",
+      "en": "‹ Query debug",
+      "ja": "‹ クエリデバッグ",
+      "zh": "‹ 查询调试"
+    },
+    "emptyHint": {
+      "ko": "자연어로 파일을 검색하세요.",
+      "en": "Search files in natural language.",
+      "ja": "自然言語でファイルを検索できます。",
+      "zh": "用自然语言搜索文件。"
+    },
+    "suggestion1": {
+      "ko": "최근 추가한 파일 보여줘",
+      "en": "Show recently added files",
+      "ja": "最近追加されたファイルを表示",
+      "zh": "显示最近添加的文件"
+    },
+    "suggestion2": {
+      "ko": "사진 파일 목록 보여줘",
+      "en": "List photo files",
+      "ja": "写真ファイルの一覧を表示",
+      "zh": "列出照片文件"
+    },
+    "suggestion3": {
+      "ko": "회의 관련 문서 찾아줘",
+      "en": "Find meeting-related documents",
+      "ja": "会議関連の文書を探して",
+      "zh": "查找会议相关文档"
+    },
+    "generating": {
+      "ko": "답변 생성 중...",
+      "en": "Generating answer...",
+      "ja": "回答を生成中...",
+      "zh": "正在生成回答..."
+    },
+    "inputPlaceholder": {
+      "ko": "질문을 입력하세요...",
+      "en": "Type your question...",
+      "ja": "質問を入力してください...",
+      "zh": "请输入问题..."
+    },
+    "send": {
+      "ko": "전송",
+      "en": "Send",
+      "ja": "送信",
+      "zh": "发送"
+    },
+    "debugTitle": {
+      "ko": "쿼리 디버그",
+      "en": "Query debug",
+      "ja": "クエリデバッグ",
+      "zh": "查询调试"
+    },
+    "debugEmpty": {
+      "ko": "질문을 보내면 여기에 쿼리 정보가 표시됩니다.",
+      "en": "Send a question to see query info here.",
+      "ja": "質問を送信するとここにクエリ情報が表示されます。",
+      "zh": "发送问题后,此处会显示查询信息。"
+    },
+    "intentAnalysis": {
+      "ko": "의도 분석",
+      "en": "Intent analysis",
+      "ja": "意図分析",
+      "zh": "意图分析"
+    },
+    "parseFailed": {
+      "ko": "파싱 실패",
+      "en": "Parse failed",
+      "ja": "解析に失敗しました",
+      "zh": "解析失败"
+    },
+    "graphResults": {
+      "ko": "그래프 쿼리 결과 ({{count}}건)",
+      "en": "Graph query results ({{count}})",
+      "ja": "グラフクエリ結果 ({{count}} 件)",
+      "zh": "图谱查询结果(共 {{count}} 条)"
+    },
+    "webResults": {
+      "ko": "웹 검색 결과 ({{count}}건)",
+      "en": "Web results ({{count}})",
+      "ja": "ウェブ検索結果 ({{count}} 件)",
+      "zh": "网页搜索结果(共 {{count}} 条)"
+    },
+    "noResults": {
+      "ko": "결과 없음",
+      "en": "No results",
+      "ja": "結果なし",
+      "zh": "无结果"
+    }
+  },
+  "graph": {
+    "clearHighlight": {
+      "ko": "포커스 해제",
+      "en": "Clear focus",
+      "ja": "フォーカスを解除",
+      "zh": "取消聚焦"
+    },
+    "disabledWhileFocused": {
+      "ko": "포커스 중에는 사용할 수 없습니다",
+      "en": "Disabled while focused on a node",
+      "ja": "ノードフォーカス中は無効",
+      "zh": "聚焦节点时不可用"
+    },
+    "backToSearch": {
+      "ko": "검색 결과로 돌아가기",
+      "en": "Back to search",
+      "ja": "検索結果へ戻る",
+      "zh": "返回搜索结果"
+    },
+    "backButton": {
+      "ko": "← 검색",
+      "en": "← Search",
+      "ja": "← 検索",
+      "zh": "← 搜索"
+    },
+    "backToCalendar": {
+      "ko": "캘린더로 돌아가기",
+      "en": "Back to calendar",
+      "ja": "カレンダーへ戻る",
+      "zh": "返回日历"
+    },
+    "backCalendarButton": {
+      "ko": "← 캘린더",
+      "en": "← Calendar",
+      "ja": "← カレンダー",
+      "zh": "← 日历"
+    },
+    "focusLabel": {
+      "ko": "🎯 포커스",
+      "en": "🎯 Focus",
+      "ja": "🎯 フォーカス",
+      "zh": "🎯 焦点"
+    },
+    "highlighting": {
+      "ko": "{{count}}개의 연결된 노드 강조 중",
+      "en": "Highlighting {{count}} connected nodes",
+      "ja": "接続された {{count}} 件のノードを強調中",
+      "zh": "正在突出 {{count}} 个相连节点"
+    },
+    "empty": {
+      "ko": "그래프가 비어있습니다. 감시 폴더에 파일을 추가해보세요.",
+      "en": "The graph is empty. Try adding files to a watched folder.",
+      "ja": "グラフは空です。監視フォルダにファイルを追加してみてください。",
+      "zh": "图谱为空。请尝试向监视文件夹添加文件。"
+    },
+    "syncing": {
+      "ko": "그래프 동기화 중",
+      "en": "Syncing graph",
+      "ja": "グラフを同期中",
+      "zh": "正在同步图谱"
+    },
+    "syncingHint": {
+      "ko": "현재 저장된 그래프를 준비하고 있습니다.",
+      "en": "Preparing the saved graph.",
+      "ja": "保存されたグラフを準備しています。",
+      "zh": "正在准备已保存的图谱。"
+    },
+    "refreshing": {
+      "ko": "그래프 동기화 중",
+      "en": "Syncing graph",
+      "ja": "グラフを同期中",
+      "zh": "正在同步图谱"
+    },
+    "loadFailed": {
+      "ko": "그래프를 불러오지 못했습니다",
+      "en": "Could not load graph",
+      "ja": "グラフを読み込めませんでした",
+      "zh": "无法加载图谱"
+    },
+    "density": {
+      "ko": "밀집도",
+      "en": "Density",
+      "ja": "密度",
+      "zh": "密度"
+    },
+    "degreeWeight": {
+      "ko": "허브 강조",
+      "en": "Hub size",
+      "ja": "ハブサイズ",
+      "zh": "节点权重"
+    },
+    "hideUnanalyzed": {
+      "ko": "분석 안 된 파일 숨기기",
+      "en": "Hide unanalyzed files",
+      "ja": "未分析のファイルを非表示",
+      "zh": "隐藏未分析的文件"
+    },
+    "hideUnanalyzedHint": {
+      "ko": "분석이 완료되지 않은 파일 노드를 그래프에서 숨깁니다 (원본 데이터는 유지).",
+      "en": "Hide file nodes that haven't finished analysis (data is preserved).",
+      "ja": "分析が完了していないファイルノードを非表示にします(データは保持)。",
+      "zh": "隐藏尚未完成分析的文件节点(数据保留)。"
+    },
+    "legendLabel": {
+      "ko": "타입별 강조",
+      "en": "Filter by type",
+      "ja": "タイプで強調",
+      "zh": "按类型筛选"
+    },
+    "legendToggleHint": {
+      "ko": "{{type}} 강조 (Shift/⌘로 추가)",
+      "en": "Highlight {{type}} (Shift/⌘ to add)",
+      "ja": "{{type}} を強調 (Shift/⌘ で追加)",
+      "zh": "突出 {{type}} (Shift/⌘ 添加)"
+    },
+    "clearTypeFilter": {
+      "ko": "타입 필터 해제",
+      "en": "Clear filter",
+      "ja": "フィルター解除",
+      "zh": "清除筛选"
+    },
+    "fileCategories": {
+      "ko": "파일 카테고리",
+      "en": "File categories",
+      "ja": "ファイルカテゴリ",
+      "zh": "文件类别"
+    },
+    "category": {
+      "memo": {
+        "ko": "메모",
+        "en": "Memo",
+        "ja": "メモ",
+        "zh": "备忘录"
+      },
+      "photo": {
+        "ko": "사진",
+        "en": "Photo",
+        "ja": "写真",
+        "zh": "照片"
+      },
+      "screenshot": {
+        "ko": "스크린샷",
+        "en": "Screenshot",
+        "ja": "スクリーンショット",
+        "zh": "截图"
+      },
+      "document": {
+        "ko": "문서",
+        "en": "Document",
+        "ja": "ドキュメント",
+        "zh": "文档"
+      },
+      "voice_memo": {
+        "ko": "음성 메모",
+        "en": "Voice memo",
+        "ja": "音声メモ",
+        "zh": "语音备忘"
+      },
+      "code": {
+        "ko": "코드",
+        "en": "Code",
+        "ja": "コード",
+        "zh": "代码"
+      },
+      "data": {
+        "ko": "데이터",
+        "en": "Data",
+        "ja": "データ",
+        "zh": "数据"
+      },
+      "other": {
+        "ko": "기타",
+        "en": "Other",
+        "ja": "その他",
+        "zh": "其他"
+      }
+    },
+    "theme": {
+      "sectionTitle": {
+        "ko": "그래프 테마",
+        "en": "Graph theme",
+        "ja": "グラフテーマ",
+        "zh": "图谱主题"
+      },
+      "description": {
+        "ko": "지식그래프 뷰의 색감과 분위기를 선택하세요.",
+        "en": "Choose the color scheme and mood for the knowledge graph.",
+        "ja": "ナレッジグラフの配色と雰囲気を選択してください。",
+        "zh": "选择知识图谱的配色与风格。"
+      },
+      "toggleTitle": {
+        "ko": "그래프 테마 전환",
+        "en": "Switch graph theme",
+        "ja": "グラフテーマを切り替え",
+        "zh": "切换图谱主题"
+      },
+      "toggleAria": {
+        "ko": "그래프 테마를 {{name}}(으)로 전환",
+        "en": "Switch graph theme to {{name}}",
+        "ja": "グラフテーマを {{name}} に切り替える",
+        "zh": "切换图谱主题为 {{name}}"
+      },
+      "obsidian": {
+        "ko": "옵시디언",
+        "en": "Obsidian",
+        "ja": "オブシディアン",
+        "zh": "黑曜石"
+      },
+      "obsidianDesc": {
+        "ko": "깊은 다크 배경 위에 비비드한 노드 (Obsidian 영감)",
+        "en": "Vivid nodes on a deep dark canvas (Obsidian-inspired)",
+        "ja": "深いダーク背景にビビッドなノード(Obsidian 風)",
+        "zh": "深色画布上的鲜艳节点(受 Obsidian 启发)"
+      },
+      "accent": {
+        "ko": "젬비스 액센트",
+        "en": "Gemvis Accent",
+        "ja": "Gemvis アクセント",
+        "zh": "Gemvis 强调"
+      },
+      "accentDesc": {
+        "ko": "앱 전역 라벤더-퍼플 톤과 통일된 무드",
+        "en": "Harmonized with the app's lavender-purple accent tone",
+        "ja": "アプリ全体のラベンダー系トーンと統一",
+        "zh": "与应用整体的薰衣草紫色调统一"
+      }
+    },
+    "panel": {
+      "close": {
+        "ko": "패널 닫기",
+        "en": "Close panel",
+        "ja": "パネルを閉じる",
+        "zh": "关闭面板"
+      },
+      "summary": {
+        "ko": "요약",
+        "en": "Summary",
+        "ja": "要約",
+        "zh": "摘要"
+      },
+      "tags": {
+        "ko": "태그",
+        "en": "Tags",
+        "ja": "タグ",
+        "zh": "标签"
+      },
+      "entities": {
+        "ko": "엔티티",
+        "en": "Entities",
+        "ja": "エンティティ",
+        "zh": "实体"
+      },
+      "connectedFiles": {
+        "ko": "연결된 파일",
+        "en": "Connected Files",
+        "ja": "接続ファイル",
+        "zh": "关联文件"
+      },
+      "relatedEntities": {
+        "ko": "관련 엔티티",
+        "en": "Related Entities",
+        "ja": "関連エンティティ",
+        "zh": "相关实体"
+      },
+      "relatedFiles": {
+        "ko": "관련 파일",
+        "en": "Related Files",
+        "ja": "関連ファイル",
+        "zh": "相关文件"
+      },
+      "coOccurrence": {
+        "ko": "공동 출현",
+        "en": "Co-occurrence",
+        "ja": "共起",
+        "zh": "共现"
+      },
+      "bridgeNode": {
+        "ko": "브릿지 노드",
+        "en": "Bridge Node",
+        "ja": "ブリッジノード",
+        "zh": "桥接节点"
+      },
+      "bridgeDesc": {
+        "ko": "이 엔티티는 서로 다른 클러스터를 연결합니다",
+        "en": "This entity connects separate clusters",
+        "ja": "このエンティティは異なるクラスターを繋いでいます",
+        "zh": "此实体连接了不同的簇"
+      },
+      "timeline": {
+        "ko": "타임라인",
+        "en": "Timeline",
+        "ja": "タイムライン",
+        "zh": "时间线"
+      },
+      "loading": {
+        "ko": "로딩 중...",
+        "en": "Loading...",
+        "ja": "読み込み中...",
+        "zh": "加载中..."
+      },
+      "noData": {
+        "ko": "아직 분석 데이터가 없습니다",
+        "en": "No analysis data yet",
+        "ja": "分析データがまだありません",
+        "zh": "暂无分析数据"
+      },
+      "sharedEntities": {
+        "ko": "공유 엔티티",
+        "en": "Shared entities",
+        "ja": "共有エンティティ",
+        "zh": "共享实体"
+      },
+      "filesCount": {
+        "ko": "{{count}}개 파일",
+        "en": "{{count}} files",
+        "ja": "{{count}}ファイル",
+        "zh": "{{count}}个文件"
+      },
+      "summaryDesc": {
+        "ko": "AI가 생성한 파일 요약",
+        "en": "AI-generated file summary",
+        "ja": "AI生成のファイル要約",
+        "zh": "AI生成的文件摘要"
+      },
+      "tagsDesc": {
+        "ko": "AI가 추출한 키워드",
+        "en": "AI-extracted keywords",
+        "ja": "AI抽出キーワード",
+        "zh": "AI提取的关键词"
+      },
+      "entitiesDesc": {
+        "ko": "파일에서 추출된 사람, 장소 등",
+        "en": "People, places, etc. extracted from file",
+        "ja": "ファイルから抽出された人物・場所など",
+        "zh": "从文件中提取的人物、地点等"
+      },
+      "connectedFilesDesc": {
+        "ko": "이 엔티티가 언급된 파일",
+        "en": "Files mentioning this entity",
+        "ja": "このエンティティが言及されたファイル",
+        "zh": "提及此实体的文件"
+      },
+      "relatedEntitiesDesc": {
+        "ko": "직접 관계가 있는 다른 엔티티",
+        "en": "Entities directly related",
+        "ja": "直接関係のあるエンティティ",
+        "zh": "直接相关的实体"
+      },
+      "coOccurrenceDesc": {
+        "ko": "같은 파일에 함께 등장하는 엔티티",
+        "en": "Entities appearing in the same files",
+        "ja": "同じファイルに共起するエンティティ",
+        "zh": "在同一文件中共同出现的实体"
+      },
+      "timelineDesc": {
+        "ko": "엔티티가 언급된 파일의 시간순 나열",
+        "en": "Files mentioning this entity, sorted by date",
+        "ja": "言及ファイルの時系列表示",
+        "zh": "按时间排列的相关文件"
+      },
+      "relatedFilesDesc": {
+        "ko": "임베딩 유사도 기반 비슷한 파일",
+        "en": "Similar files based on embedding similarity",
+        "ja": "埋め込み類似度に基づく関連ファイル",
+        "zh": "基于嵌入相似度的相关文件"
+      }
+    }
+  },
+  "calendar": {
+    "subtitle": {
+      "ko": "하루 요약과 파일 활동을 한눈에",
+      "en": "Daily summaries and file activity at a glance",
+      "ja": "一日の要約とファイル活動を一目で",
+      "zh": "一目了然查看每日摘要和文件活动"
+    },
+    "fetchListError": {
+      "ko": "요약 목록 불러오기 실패",
+      "en": "Failed to load summary list",
+      "ja": "要約一覧の読み込みに失敗しました",
+      "zh": "加载摘要列表失败"
+    },
+    "fetchDayError": {
+      "ko": "날짜 정보 불러오기 실패",
+      "en": "Failed to load day info",
+      "ja": "日付情報の読み込みに失敗しました",
+      "zh": "加载日期信息失败"
+    },
+    "yearSelect": {
+      "ko": "연도 선택",
+      "en": "Select year",
+      "ja": "年を選択",
+      "zh": "选择年份"
+    },
+    "monthSelect": {
+      "ko": "월 선택",
+      "en": "Select month",
+      "ja": "月を選択",
+      "zh": "选择月份"
+    },
+    "yearLabel": {
+      "ko": "{{n}}년",
+      "en": "{{n}}",
+      "ja": "{{n}}年",
+      "zh": "{{n}} 年"
+    },
+    "prevMonth": {
+      "ko": "이전 달",
+      "en": "Previous month",
+      "ja": "前の月",
+      "zh": "上一个月"
+    },
+    "nextMonth": {
+      "ko": "다음 달",
+      "en": "Next month",
+      "ja": "次の月",
+      "zh": "下一个月"
+    },
+    "today": {
+      "ko": "오늘",
+      "en": "Today",
+      "ja": "今日",
+      "zh": "今天"
+    },
+    "detailEmpty": {
+      "ko": "날짜를 클릭하면 그날의 요약과 파일이 표시됩니다.",
+      "en": "Click a date to see its summary and files.",
+      "ja": "日付をクリックすると、その日の要約とファイルが表示されます。",
+      "zh": "点击日期可查看当日的摘要和文件。"
+    },
+    "closeDetail": {
+      "ko": "닫기",
+      "en": "Close",
+      "ja": "閉じる",
+      "zh": "关闭"
+    },
+    "loadingDay": {
+      "ko": "불러오는 중",
+      "en": "Loading",
+      "ja": "読み込み中",
+      "zh": "加载中"
+    },
+    "work": {
+      "ko": "업무",
+      "en": "Work",
+      "ja": "仕事",
+      "zh": "工作"
+    },
+    "personal": {
+      "ko": "개인",
+      "en": "Personal",
+      "ja": "個人",
+      "zh": "个人"
+    },
+    "daily": {
+      "ko": "하루",
+      "en": "Daily",
+      "ja": "1日",
+      "zh": "全天"
+    },
+    "summaryHeading": {
+      "ko": "{{label}} 요약",
+      "en": "{{label}} summary",
+      "ja": "{{label}}の要約",
+      "zh": "{{label}}摘要"
+    },
+    "summaryHint": {
+      "daily": {
+        "ko": "그날 00:00부터 23:59 사이에 수정된 모든 파일을 한 문장으로 요약합니다.",
+        "en": "Summarizes every file modified between 00:00 and 23:59 of the day in one sentence.",
+        "ja": "その日の00:00〜23:59に変更されたすべてのファイルを1文で要約します。",
+        "zh": "将当天 00:00 至 23:59 期间修改的所有文件用一句话总结。"
+      },
+      "work": {
+        "ko": "설정에서 지정한 업무 시간대에 수정된 파일들의 요약입니다.",
+        "en": "Summarizes files modified during the work hours you configured in Settings.",
+        "ja": "設定で指定した業務時間内に変更されたファイルの要約です。",
+        "zh": "汇总在“设置”中指定的工作时段内修改的文件。"
+      },
+      "personal": {
+        "ko": "업무 시간 외(개인 시간)에 수정된 파일들의 요약입니다.",
+        "en": "Summarizes files modified outside the configured work hours.",
+        "ja": "業務時間外(個人時間)に変更されたファイルの要約です。",
+        "zh": "汇总在工作时段之外(个人时间)修改的文件。"
+      }
+    },
+    "generate": {
+      "ko": "생성",
+      "en": "Generate",
+      "ja": "生成",
+      "zh": "生成"
+    },
+    "regenerate": {
+      "ko": "재생성",
+      "en": "Regenerate",
+      "ja": "再生成",
+      "zh": "重新生成"
+    },
+    "summaryEmpty": {
+      "ko": "아직 생성된 요약이 없습니다. 생성을 눌러 시작하세요.",
+      "en": "No summary yet. Press Generate to start.",
+      "ja": "まだ要約はありません。「生成」を押して始めてください。",
+      "zh": "暂无摘要。点击「生成」开始。"
+    },
+    "relatedFiles": {
+      "ko": "관련 파일 {{count}}개",
+      "en": "{{count}} related files",
+      "ja": "関連ファイル {{count}} 件",
+      "zh": "相关文件 {{count}} 个"
+    },
+    "detectedFiles": {
+      "ko": "파일 {{count}}개",
+      "en": "{{count}} files",
+      "ja": "ファイル {{count}}件",
+      "zh": "{{count}} 个文件"
+    },
+    "eventTooltip": {
+      "ko": "{{label}} (파일 {{count}}개)",
+      "en": "{{label}} ({{count}} files)",
+      "ja": "{{label}} (ファイル {{count}}件)",
+      "zh": "{{label}} ({{count}} 个文件)"
+    },
+    "showInGraphTitle": {
+      "ko": "지식그래프에서 보기",
+      "en": "Show in knowledge graph",
+      "ja": "ナレッジグラフで表示",
+      "zh": "在知识图谱中查看"
+    },
+    "openFolderTitle": {
+      "ko": "탐색기에서 열기",
+      "en": "Open in file explorer",
+      "ja": "エクスプローラーで開く",
+      "zh": "在文件管理器中打开"
+    },
+    "tasks": {
+      "heading": {
+        "ko": "할 일",
+        "en": "To-do",
+        "ja": "やること",
+        "zh": "待办"
+      },
+      "headingHint": {
+        "ko": "그날 추가한 할 일을 관리합니다. 그 날 완료되지 않은 할 일은 다음 날로 자동으로 넘어갑니다.",
+        "en": "Manage tasks added for that day. Incomplete tasks automatically roll over to the next day.",
+        "ja": "その日に追加したタスクを管理します。完了しなかったタスクは翌日に自動で持ち越されます。",
+        "zh": "管理当天添加的待办事项。未完成的事项会自动顺延到第二天。"
+      },
+      "inputPlaceholder": {
+        "ko": "할 일을 입력하세요",
+        "en": "Enter a task",
+        "ja": "やることを入力",
+        "zh": "输入待办事项"
+      },
+      "addButton": {
+        "ko": "+ 추가",
+        "en": "+ Add",
+        "ja": "+ 追加",
+        "zh": "+ 添加"
+      },
+      "empty": {
+        "ko": "등록된 할 일이 없습니다.",
+        "en": "No tasks yet.",
+        "ja": "やることはまだありません。",
+        "zh": "暂无待办事项。"
+      },
+      "readonlyHint": {
+        "ko": "과거 날짜에는 할 일을 새로 추가할 수 없습니다.",
+        "en": "You cannot add new tasks to past dates.",
+        "ja": "過去の日付には新しいやることを追加できません。",
+        "zh": "无法在过去的日期添加新待办。"
+      },
+      "recheck": {
+        "ko": "재검사",
+        "en": "Re-check",
+        "ja": "再検査",
+        "zh": "重新检查"
+      },
+      "evaluating": {
+        "ko": "검사 중…",
+        "en": "Checking…",
+        "ja": "確認中…",
+        "zh": "检查中…"
+      },
+      "recheckUpdated": {
+        "ko": "{{count}}개 갱신됨",
+        "en": "{{count}} updated",
+        "ja": "{{count}}件 更新",
+        "zh": "已更新 {{count}} 项"
+      },
+      "recheckNoChange": {
+        "ko": "변경 사항 없음",
+        "en": "No changes",
+        "ja": "変更なし",
+        "zh": "无变化"
+      },
+      "recheckNoFiles": {
+        "ko": "이 날 활동한 파일이 없어 평가할 수 없습니다",
+        "en": "No file activity on this date — nothing to evaluate",
+        "ja": "この日のファイル活動がないため評価できません",
+        "zh": "当日没有文件活动,无法评估"
+      },
+      "relatedFiles": {
+        "ko": "관련 파일 {{count}}개",
+        "en": "{{count}} related files",
+        "ja": "関連ファイル {{count}} 件",
+        "zh": "相关文件 {{count}} 个"
+      },
+      "rolloverTitle": {
+        "ko": "{{date}}부터 이월된 할 일 ({{count}}일째)",
+        "en": "Rolled over from {{date}} (day {{count}})",
+        "ja": "{{date}}から繰り越し ({{count}}日目)",
+        "zh": "自 {{date}} 顺延(第 {{count}} 天)"
+      },
+      "rolloverInline": {
+        "ko": "← {{date}} ({{count}}일째)",
+        "en": "← {{date}} (day {{count}})",
+        "ja": "← {{date}} ({{count}}日目)",
+        "zh": "← {{date}} (第 {{count}} 天)"
+      },
+      "deleteTitle": {
+        "ko": "삭제",
+        "en": "Delete",
+        "ja": "削除",
+        "zh": "删除"
+      },
+      "progress": {
+        "ko": "{{done}} / {{total}} 완료",
+        "en": "{{done}} / {{total}} done",
+        "ja": "{{done}} / {{total}} 完了",
+        "zh": "{{done}} / {{total}} 已完成"
+      }
+    },
+    "generatedAt": {
+      "ko": "생성",
+      "en": "Generated",
+      "ja": "生成",
+      "zh": "生成时间"
+    },
+    "summaryGenerated": {
+      "ko": "{{label}} 요약이 생성되었습니다.",
+      "en": "{{label}} summary generated.",
+      "ja": "{{label}}の要約を生成しました。",
+      "zh": "已生成{{label}}摘要。"
+    },
+    "summaryRegenerated": {
+      "ko": "{{label}} 요약이 재생성되었습니다.",
+      "en": "{{label}} summary regenerated.",
+      "ja": "{{label}}の要約を再生成しました。",
+      "zh": "已重新生成{{label}}摘要。"
+    },
+    "summaryDeleted": {
+      "ko": "{{label}} 요약이 삭제되었습니다.",
+      "en": "{{label}} summary deleted.",
+      "ja": "{{label}}の要約を削除しました。",
+      "zh": "已删除{{label}}摘要。"
+    },
+    "generateFailed": {
+      "ko": "요약 생성 실패",
+      "en": "Failed to generate summary",
+      "ja": "要約の生成に失敗しました",
+      "zh": "生成摘要失败"
+    },
+    "deleteFailed": {
+      "ko": "요약 삭제 실패",
+      "en": "Failed to delete summary",
+      "ja": "要約の削除に失敗しました",
+      "zh": "删除摘要失败"
+    },
+    "confirmDeleteTitle": {
+      "ko": "요약을 삭제할까요?",
+      "en": "Delete this summary?",
+      "ja": "要約を削除しますか?",
+      "zh": "确定要删除摘要吗?"
+    },
+    "confirmRegenerateTitle": {
+      "ko": "요약을 다시 생성할까요?",
+      "en": "Regenerate this summary?",
+      "ja": "要約を再生成しますか?",
+      "zh": "确定要重新生成摘要吗?"
+    },
+    "deleteDesc": {
+      "ko": "저장된 요약이 영구히 삭제됩니다. 원본 이벤트 로그는 유지되므로 언제든 다시 생성할 수 있습니다.",
+      "en": "The saved summary will be permanently deleted. The underlying event log is kept, so you can regenerate anytime.",
+      "ja": "保存された要約は完全に削除されます。元のイベントログは保持されるため、いつでも再生成できます。",
+      "zh": "已保存的摘要将被永久删除。原始事件日志会保留,可随时重新生成。"
+    },
+    "regenerateDesc": {
+      "ko": "기존 요약을 덮어쓰고 새로 생성합니다. LLM 호출이 발생합니다.",
+      "en": "The existing summary will be overwritten with a new one. An LLM call will be made.",
+      "ja": "既存の要約を上書きして新しく生成します。LLM の呼び出しが発生します。",
+      "zh": "将覆盖现有摘要并重新生成。会调用一次 LLM。"
+    },
+    "confirmContext": {
+      "ko": "{{label}} 요약",
+      "en": "{{label}} summary",
+      "ja": "{{label}}の要約",
+      "zh": "{{label}}摘要"
+    },
+    "months": {
+      "m1":  { "ko": "1월",  "en": "Jan", "ja": "1月",  "zh": "1月" },
+      "m2":  { "ko": "2월",  "en": "Feb", "ja": "2月",  "zh": "2月" },
+      "m3":  { "ko": "3월",  "en": "Mar", "ja": "3月",  "zh": "3月" },
+      "m4":  { "ko": "4월",  "en": "Apr", "ja": "4月",  "zh": "4月" },
+      "m5":  { "ko": "5월",  "en": "May", "ja": "5月",  "zh": "5月" },
+      "m6":  { "ko": "6월",  "en": "Jun", "ja": "6月",  "zh": "6月" },
+      "m7":  { "ko": "7월",  "en": "Jul", "ja": "7月",  "zh": "7月" },
+      "m8":  { "ko": "8월",  "en": "Aug", "ja": "8月",  "zh": "8月" },
+      "m9":  { "ko": "9월",  "en": "Sep", "ja": "9月",  "zh": "9月" },
+      "m10": { "ko": "10월", "en": "Oct", "ja": "10月", "zh": "10月" },
+      "m11": { "ko": "11월", "en": "Nov", "ja": "11月", "zh": "11月" },
+      "m12": { "ko": "12월", "en": "Dec", "ja": "12月", "zh": "12月" }
+    }
+  },
+  "api": {
+    "watcher": {
+      "alreadyRunning": {
+        "ko": "이미 실행 중입니다. 감시 폴더: {{dirs}}",
+        "en": "Already running. Watched folders: {{dirs}}",
+        "ja": "すでに実行中です。監視フォルダ: {{dirs}}",
+        "zh": "已在运行中。监视文件夹:{{dirs}}"
+      },
+      "started": {
+        "ko": "파일 감시 시작. 감시 폴더: {{dirs}}",
+        "en": "File watcher started. Watched folders: {{dirs}}",
+        "ja": "ファイル監視を開始しました。監視フォルダ: {{dirs}}",
+        "zh": "已开始文件监视。监视文件夹:{{dirs}}"
+      },
+      "notRunning": {
+        "ko": "감시가 실행 중이 아닙니다.",
+        "en": "File watcher is not running.",
+        "ja": "監視は実行されていません。",
+        "zh": "文件监视未在运行。"
+      },
+      "stopped": {
+        "ko": "파일 감시 중지됨.",
+        "en": "File watcher stopped.",
+        "ja": "ファイル監視を停止しました。",
+        "zh": "已停止文件监视。"
+      },
+      "scanStarted": {
+        "ko": "전체 인사이트 추출을 시작했습니다.",
+        "en": "Insight extraction started.",
+        "ja": "インサイト抽出を開始しました。",
+        "zh": "已开始提取洞察。"
+      },
+      "scanDocumentsStarted": {
+        "ko": "문서 인사이트 추출을 시작했습니다.",
+        "en": "Document extraction started.",
+        "ja": "ドキュメント抽出を開始しました。",
+        "zh": "已开始提取文档。"
+      },
+      "scanImagesStarted": {
+        "ko": "이미지 분석을 시작했습니다.",
+        "en": "Image analysis started.",
+        "ja": "画像分析を開始しました。",
+        "zh": "已开始分析图像。"
+      },
+      "scanSkeletonStarted": {
+        "ko": "디스크 스캔을 시작했습니다.",
+        "en": "Disk scan started.",
+        "ja": "ディスクスキャンを開始しました。",
+        "zh": "已开始扫描磁盘。"
+      }
+    },
+    "config": {
+      "saved": {
+        "ko": "설정 저장 완료. 감시 폴더: {{dirs}}",
+        "en": "Settings saved. Watched folders: {{dirs}}",
+        "ja": "設定を保存しました。監視フォルダ: {{dirs}}",
+        "zh": "设置已保存。监视文件夹:{{dirs}}"
+      }
+    },
+    "graph": {
+      "cleared": {
+        "ko": "모든 분석 데이터가 초기화되었습니다. 원본 파일은 그대로 유지됩니다.",
+        "en": "All analysis data has been reset. Original files are untouched.",
+        "ja": "すべての分析データを初期化しました。元のファイルはそのまま残ります。",
+        "zh": "已重置所有分析数据。原始文件保持不变。"
+      }
+    },
+    "errors": {
+      "scheduleFormat": {
+        "ko": "스케줄 형식 오류: {{error}}",
+        "en": "Invalid schedule format: {{error}}",
+        "ja": "スケジュール形式エラー: {{error}}",
+        "zh": "工作安排格式错误:{{error}}"
+      },
+      "dateFormat": {
+        "ko": "잘못된 날짜 형식: {{date}} (YYYY-MM-DD)",
+        "en": "Invalid date format: {{date}} (YYYY-MM-DD)",
+        "ja": "日付の形式が正しくありません: {{date}} (YYYY-MM-DD)",
+        "zh": "日期格式不正确:{{date}}(YYYY-MM-DD)"
+      },
+      "summaryNotFound": {
+        "ko": "요약이 없습니다",
+        "en": "Summary not found",
+        "ja": "要約がありません",
+        "zh": "未找到摘要"
+      },
+      "fileNotFound": {
+        "ko": "파일을 찾을 수 없습니다",
+        "en": "File not found",
+        "ja": "ファイルが見つかりません",
+        "zh": "未找到文件"
+      },
+      "reanalysisFailed": {
+        "ko": "재분석 실패 (파일 존재 여부 확인)",
+        "en": "Re-analysis failed (check whether the file still exists)",
+        "ja": "再分析に失敗しました (ファイルの存在を確認してください)",
+        "zh": "重新分析失败(请确认文件是否存在)"
+      },
+      "pathNotFound": {
+        "ko": "경로를 찾을 수 없습니다: {{path}}",
+        "en": "Path not found: {{path}}",
+        "ja": "パスが見つかりません: {{path}}",
+        "zh": "未找到路径:{{path}}"
+      },
+      "noFileManager": {
+        "ko": "파일 관리자를 찾을 수 없습니다. WSL_DISTRO_NAME이 설정되지 않았거나 wslu/xdg-open이 없습니다.",
+        "en": "No file manager available. WSL_DISTRO_NAME may be unset, or wslu/xdg-open is missing.",
+        "ja": "ファイルマネージャが見つかりません。WSL_DISTRO_NAME が未設定か、wslu/xdg-open がありません。",
+        "zh": "未找到文件管理器。WSL_DISTRO_NAME 未设置,或缺少 wslu/xdg-open。"
+      }
+    }
+  },
+  "summary": {
+    "personalNight": {
+      "ko": "전일 개인 시간",
+      "en": "Personal time (previous day)",
+      "ja": "前日の個人時間",
+      "zh": "前一日个人时间"
+    },
+    "noWorkHours": {
+      "ko": "이 날짜는 업무 시간이 설정되어 있지 않습니다.",
+      "en": "No work hours are configured for this date.",
+      "ja": "この日付には勤務時間が設定されていません。",
+      "zh": "此日期未设置工作时间。"
+    }
+  },
+  "search": {
+    "noResults": {
+      "ko": "검색 결과가 없습니다. 다른 키워드로 시도해보세요.",
+      "en": "No results found. Try different keywords.",
+      "ja": "検索結果が見つかりません。別のキーワードで試してください。",
+      "zh": "未找到搜索结果。请尝试其他关键词。"
+    },
+    "foundFiles": {
+      "ko": "총 {{count}}개의 파일을 찾았습니다:\n{{files}}",
+      "en": "Found {{count}} files:\n{{files}}",
+      "ja": "{{count}} 件のファイルが見つかりました:\n{{files}}",
+      "zh": "找到 {{count}} 个文件:\n{{files}}"
+    },
+    "genericError": {
+      "ko": "검색 중 오류가 발생했습니다. 다시 시도해주세요.",
+      "en": "An error occurred during search. Please try again.",
+      "ja": "検索中にエラーが発生しました。もう一度お試しください。",
+      "zh": "搜索时发生错误。请重试。"
+    }
+  },
+  "onboarding": {
+    "welcomeTitle": {
+      "ko": "Gemvis에 오신 것을 환영합니다",
+      "en": "Welcome to Gemvis",
+      "ja": "Gemvis へようこそ",
+      "zh": "欢迎使用 Gemvis"
+    },
+    "welcomeDesc": {
+      "ko": "로컬 AI가 파일을 자동 분류하고\n지식그래프로 연결합니다.",
+      "en": "Local AI automatically organizes your files\nand connects them in a knowledge graph.",
+      "ja": "ローカル AI がファイルを自動分類し\nナレッジグラフで接続します。",
+      "zh": "本地 AI 自动分类您的文件\n并通过知识图谱连接它们。"
+    },
+    "privacyBadge": {
+      "ko": "모든 데이터는 이 기기에만 저장됩니다",
+      "en": "All data stays on this device",
+      "ja": "すべてのデータはこのデバイスにのみ保存されます",
+      "zh": "所有数据仅保存在此设备上"
+    },
+    "start": {
+      "ko": "시작하기",
+      "en": "Get Started",
+      "ja": "はじめる",
+      "zh": "开始使用"
+    },
+    "skip": {
+      "ko": "건너뛰기",
+      "en": "Skip",
+      "ja": "スキップ",
+      "zh": "跳过"
+    },
+    "featureLocalTitle": {
+      "ko": "100% 온디바이스",
+      "en": "100% On-Device",
+      "ja": "100% オンデバイス",
+      "zh": "100% 本地运行"
+    },
+    "featureLocalDesc": {
+      "ko": "클라우드 전송 없이, 내 컴퓨터에서만 동작",
+      "en": "Runs only on your computer, no cloud uploads",
+      "ja": "クラウド送信なし、お使いのコンピューターのみで動作",
+      "zh": "无需上传云端，仅在您的电脑上运行"
+    },
+    "featureGraphTitle": {
+      "ko": "자동 지식그래프",
+      "en": "Auto Knowledge Graph",
+      "ja": "自動ナレッジグラフ",
+      "zh": "自动知识图谱"
+    },
+    "featureGraphDesc": {
+      "ko": "파일 속 인물, 장소, 이벤트를 자동으로 연결",
+      "en": "Automatically links people, places, and events in your files",
+      "ja": "ファイル内の人物・場所・イベントを自動的に接続",
+      "zh": "自动连接文件中的人物、地点和事件"
+    },
+    "featureSearchTitle": {
+      "ko": "자연어 검색",
+      "en": "Natural Language Search",
+      "ja": "自然言語検索",
+      "zh": "自然语言搜索"
+    },
+    "featureSearchDesc": {
+      "ko": "\"지난달 김과장이랑 간 식당 어디였지?\" 같은 질문 가능",
+      "en": "Ask questions like \"Where did I eat with Kim last month?\"",
+      "ja": "「先月キムさんと行ったレストランはどこ？」のような質問が可能",
+      "zh": "可以提问「上个月和金经理去的餐厅在哪里？」"
+    },
+    "langTitle": {
+      "ko": "언어를 선택하세요",
+      "en": "Choose your language",
+      "ja": "言語を選択してください",
+      "zh": "选择您的语言"
+    },
+    "langDesc": {
+      "ko": "인터페이스와 파일 분석에 사용됩니다.",
+      "en": "Used for the interface and file analysis.",
+      "ja": "インターフェースとファイル分析に使用されます。",
+      "zh": "用于界面和文件分析。"
+    },
+    "next": {
+      "ko": "다음",
+      "en": "Next",
+      "ja": "次へ",
+      "zh": "下一步"
+    },
+    "back": {
+      "ko": "이전",
+      "en": "Back",
+      "ja": "戻る",
+      "zh": "上一步"
+    },
+    "dirsTitle": {
+      "ko": "모니터링할 폴더를 선택하세요",
+      "en": "Choose folders to monitor",
+      "ja": "監視するフォルダを選択してください",
+      "zh": "选择要监视的文件夹"
+    },
+    "dirsDesc": {
+      "ko": "선택한 폴더의 파일이 자동으로 분석됩니다.\n나중에 설정에서 변경할 수 있습니다.",
+      "en": "Files in selected folders will be analyzed automatically.\nYou can change this later in Settings.",
+      "ja": "選択したフォルダ内のファイルが自動的に分析されます。\n後で設定から変更できます。",
+      "zh": "所选文件夹中的文件将被自动分析。\n您可以稍后在设置中更改。"
+    },
+    "begin": {
+      "ko": "시작",
+      "en": "Begin",
+      "ja": "開始",
+      "zh": "开始"
+    },
+    "beginFailed": {
+      "ko": "설정 저장에 실패했습니다. 다시 시도해주세요.",
+      "en": "Failed to save settings. Please try again.",
+      "ja": "設定の保存に失敗しました。もう一度お試しください。",
+      "zh": "保存设置失败。请重试。"
+    },
+    "stepIndicator": {
+      "ko": "{{current}} / {{total}}",
+      "en": "{{current}} / {{total}}",
+      "ja": "{{current}} / {{total}}",
+      "zh": "{{current}} / {{total}}"
+    },
+    "imageTitle": {
+      "ko": "이미지 분석 옵션",
+      "en": "Image Analysis Option",
+      "ja": "画像分析オプション",
+      "zh": "图像分析选项"
+    },
+    "imageDesc": {
+      "ko": "이미지 파일의 내용을 AI로 분석하여 젬인사이트를 추출할 수 있습니다.",
+      "en": "AI can analyze image file contents to extract GemInsights.",
+      "ja": "画像ファイルの内容を AI で分析して GemInsight を抽出できます。",
+      "zh": "AI 可以分析图像文件内容以提取 GemInsight。"
+    },
+    "imageOptionOn": {
+      "ko": "이미지 분석 켜기",
+      "en": "Enable image analysis",
+      "ja": "画像分析を有効にする",
+      "zh": "启用图像分析"
+    },
+    "imageOptionOnDesc": {
+      "ko": "이미지의 내용을 해석하여 인사이트를 추출합니다.\n분석 시간과 VRAM 사용량이 더 늘어날 수 있습니다.",
+      "en": "Interprets image contents to extract insights.\nMay increase analysis time and VRAM usage.",
+      "ja": "画像の内容を解析してインサイトを抽出します。\n分析時間と VRAM 使用量が増える場合があります。",
+      "zh": "解读图像内容以提取洞察。\n可能会增加分析时间和显存使用量。"
+    },
+    "imageOptionOff": {
+      "ko": "이미지 분석 건너뛰기",
+      "en": "Skip image analysis",
+      "ja": "画像分析をスキップ",
+      "zh": "跳过图像分析"
+    },
+    "imageOptionOffDesc": {
+      "ko": "전체 분석 속도가 더 빠릅니다.\n이후 설정에서 이미지 파일만 따로 분석할 수 있습니다.",
+      "en": "Overall analysis will be faster.\nYou can analyze image files later from Settings.",
+      "ja": "全体の分析速度が速くなります。\n後で設定から画像ファイルのみ分析できます。",
+      "zh": "整体分析速度更快。\n之后可以在设置中单独分析图像文件。"
+    }
+  }
+}
