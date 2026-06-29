@@ -27,32 +27,32 @@
 ```markdown
 # Gemvis 프로젝트 회의록
 **날짜**: 2026년 5월 11일  
-**참석자**: 인규, 준혁, 혜지, 태종  
+**참석자**: Alice, Bob, Carol, Dave  
 **장소**: 강남 스타벅스
 
 ### 1. 해커톤 일정 확인
 - 제출 마감: 5월 15일 오후 11시
 - 최종 발표: 5월 20일
-- 인규님이 백엔드 파이프라인 마무리 담당
+- 백엔드 담당자이 백엔드 파이프라인 마무리 담당
 ...
 ```
 
 ### Gemma 4 분석 결과 (현재 AnalysisResult → 향후 GemInsight)
 ```json
 {
-  "file_path": "/Users/andy/gemvis_watch/test_meeting_note.md",
+  "file_path": "/Users/username/gemvis_watch/test_meeting_note.md",
   "category": "document",
   "summary": "Gemvis 프로젝트 회의록 — 해커톤 일정과 기술 스택 결정, 다음 주 할 일 논의",
   "tags": ["회의록", "프로젝트", "해커톤", "기술스택", "LLM", "React", "그래프DB"],
   "entities": {
-    "people":   ["인규", "준혁", "혜지", "태종"],
+    "people":   ["Alice", "Bob", "Carol", "Dave"],
     "places":   ["강남 스타벅스"],
     "projects": ["Gemvis"],
     "dates":    ["2026-05-11", "2026-05-15", "2026-05-20", "2026-05-13"],
     "events":   ["회의", "해커톤"]
   },
   "relations": [
-    {"source": "인규", "target": "Gemvis", "relation": "works_on"},
+    {"source": "Alice", "target": "Gemvis", "relation": "works_on"},
     {"source": "회의", "target": "2026-05-11", "relation": "occurred_at"},
     {"source": "회의", "target": "강남 스타벅스", "relation": "located_at"}
   ],
@@ -191,7 +191,7 @@ def generate_daily_summary(date: str, period: str):
 - AS-IS: 2026-05-11 요약 생성 시 "회의록 파일의 summary를 어디선가 가져옴"
 - TO-BE: 2026-05-11 요약 = `test_meeting_note.md`의 **GemInsight**를 참조
   - summary: "Gemvis 프로젝트 회의록 — 해커톤 일정과 기술 스택 결정..."
-  - entities.people: ["인규", "준혁", "혜지", "태종"] → LLM이 "4명 참석" 컨텍스트로 활용
+  - entities.people: ["Alice", "Bob", "Carol", "Dave"] → LLM이 "4명 참석" 컨텍스트로 활용
 
 ---
 
@@ -240,7 +240,7 @@ def get_graph_data():
 - AS-IS: 
   ```
   [file:test_meeting_note.md] 노드
-    → mentions → [person:인규]
+    → mentions → [person:Alice]
     → mentions → [place:강남 스타벅스]
   ```
   → 이 관계들이 어디서 왔는지 불명확
@@ -249,8 +249,8 @@ def get_graph_data():
   ```
   [file:test_meeting_note.md] 노드 (GemInsight)
     ↓ insight.summary: "Gemvis 프로젝트 회의록..."
-    ↓ insight.entities: {"people": ["인규",...], "places": ["강남 스타벅스"]}
-    → mentions → [person:인규]  ← GemInsight.entities.people에서 파생
+    ↓ insight.entities: {"people": ["Alice",...], "places": ["강남 스타벅스"]}
+    → mentions → [person:Alice]  ← GemInsight.entities.people에서 파생
     → mentions → [place:강남 스타벅스]  ← GemInsight.entities.places에서 파생
   ```
   → 그래프 엣지가 **GemInsight의 entities/relations**에서 생성됨을 명확히 인지
@@ -364,18 +364,18 @@ class SearchEngine:
 
 **test_meeting_note.md 예시**:
 
-**사용자 질문**: "인규가 담당한 업무 뭐였지?"
+**사용자 질문**: "Alice가 담당한 업무 뭐였지?"
 
 **AS-IS 흐름**:
 ```
-1. Intent 파싱: search_terms=["인규"], semantic_query="담당 업무"
+1. Intent 파싱: search_terms=["Alice"], semantic_query="담당 업무"
 2. 그래프 검색:
-   - "인규" 노드 찾기
+   - "Alice" 노드 찾기
    - 1-hop 이웃 파일: [file:test_meeting_note.md]
 3. 임베딩 재랭킹: "담당 업무" 유사도로 정렬
 4. LLM 답변:
    - 입력: graph_results (file 노드 + person 노드 혼재)
-   - 출력: "인규님은 백엔드 파이프라인 마무리를 담당했어요."
+   - 출력: "백엔드 담당자은 백엔드 파이프라인 마무리를 담당했어요."
 ```
 → 그래프 노드를 LLM에 어떻게 전달했는지, 파일 내용은 어디서 가져왔는지 불투명
 
@@ -383,22 +383,22 @@ class SearchEngine:
 ```
 1. Intent 파싱: 동일
 2. GemInsight 후보 수집:
-   - KG: "인규" → [person:인규] → 1-hop → [file:test_meeting_note.md]
+   - KG: "Alice" → [person:Alice] → 1-hop → [file:test_meeting_note.md]
    - Embedding: "담당 업무" 유사도 계산 → test_meeting_note.md 상위 랭크
    - 결과: [GemInsight(test_meeting_note.md)]
 3. RAG Context 구성:
    {
-     "file_path": "/Users/andy/gemvis_watch/test_meeting_note.md",
+     "file_path": "/Users/username/gemvis_watch/test_meeting_note.md",
      "summary": "Gemvis 프로젝트 회의록 — 해커톤 일정과 기술 스택 결정...",
      "tags": ["회의록", "프로젝트", "해커톤"],
      "entities": {
-       "people": ["인규", "준혁", "혜지", "태종"]
+       "people": ["Alice", "Bob", "Carol", "Dave"]
      },
      "category": "document"
    }
 4. LLM 답변 생성:
    - 프롬프트: "다음 GemInsight를 참고해서 답변해줘: [위 context]"
-   - 출력: "인규님은 백엔드 파이프라인 마무리를 담당했어요.
+   - 출력: "백엔드 담당자은 백엔드 파이프라인 마무리를 담당했어요.
             (관련 GemInsight: test_meeting_note.md - Gemvis 프로젝트 회의록)"
 ```
 

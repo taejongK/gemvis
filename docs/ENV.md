@@ -77,16 +77,16 @@ Folder(s) to watch for file changes. Can be a single path or comma-separated lis
 **Examples**:
 ```env
 # Single folder
-GEMVIS_WATCH_DIR=/Users/andy/Documents
+GEMVIS_WATCH_DIR=/Users/username/Documents
 
 # Multiple folders (comma-separated, no spaces)
-GEMVIS_WATCH_DIR=/Users/andy/Documents,/Users/andy/Downloads,/Users/andy/Desktop
+GEMVIS_WATCH_DIR=/Users/username/Documents,/Users/username/Downloads,/Users/username/Desktop
 
 # Windows
-GEMVIS_WATCH_DIR=C:\Users\Andy\Documents
+GEMVIS_WATCH_DIR=C:\Users\Username\Documents
 
 # WSL2 (Windows path via UNC)
-GEMVIS_WATCH_DIR=/mnt/c/Users/Andy/Documents
+GEMVIS_WATCH_DIR=/mnt/c/Users/Username/Documents
 ```
 
 **Note**: The settings UI overrides this — user-selected folders are stored in `~/.gemvis/preferences.json`.
@@ -168,7 +168,7 @@ LLM_BASE_URL=http://127.0.0.1:8080/v1
 LLM_API_KEY=none
 LLM_MODEL=unsloth/gemma-4-E2B-it-GGUF:Q4_K_M
 
-GEMVIS_WATCH_DIR=C:\Users\Andy\Documents
+GEMVIS_WATCH_DIR=C:\Users\Username\Documents
 ```
 
 ### macOS / Linux (llama.cpp)
@@ -178,7 +178,7 @@ LLM_BASE_URL=http://127.0.0.1:8080/v1
 LLM_API_KEY=none
 LLM_MODEL=unsloth/gemma-4-E2B-it-GGUF:Q4_K_M
 
-GEMVIS_WATCH_DIR=/Users/andy/Documents
+GEMVIS_WATCH_DIR=/Users/username/Documents
 ```
 
 ### WSL2 (llama.cpp)
@@ -189,7 +189,7 @@ LLM_API_KEY=none
 LLM_MODEL=unsloth/gemma-4-E2B-it-GGUF:Q4_K_M
 
 # Windows path via /mnt/c/
-GEMVIS_WATCH_DIR=/mnt/c/Users/Andy/Documents
+GEMVIS_WATCH_DIR=/mnt/c/Users/Username/Documents
 ```
 
 ### LAN Server (Remote llama.cpp)
@@ -199,7 +199,7 @@ LLM_BASE_URL=http://192.168.1.100:8080/v1
 LLM_API_KEY=none
 LLM_MODEL=unsloth/gemma-4-E2B-it-GGUF:Q4_K_M
 
-GEMVIS_WATCH_DIR=/Users/andy/Documents
+GEMVIS_WATCH_DIR=/Users/username/Documents
 ```
 
 ---
@@ -213,7 +213,7 @@ GEMVIS_WATCH_DIR=/Users/andy/Documents
 | `LLM_BASE_URL` | Yes | `http://127.0.0.1:8080/v1` | OpenAI-compatible LLM endpoint (local only) | `http://127.0.0.1:8080/v1` |
 | `LLM_API_KEY` | Yes | `none` | API key (or `none` for local servers) | `none`, `sk-xxx` |
 | `LLM_MODEL` | Yes | `unsloth/gemma-4-E2B-it-GGUF:Q4_K_M` | Model identifier | `unsloth/gemma-4-E2B-it-GGUF:Q4_K_M` |
-| `GEMVIS_WATCH_DIR` | No | `~/gemvis_watch` | Folder(s) to watch (comma-separated) | `/Users/andy/Documents` |
+| `GEMVIS_WATCH_DIR` | No | `~/gemvis_watch` | Folder(s) to watch (comma-separated) | `/Users/username/Documents` |
 | `GEMVIS_GRAPH_PATH` | No | `~/.gemvis/graph.ttl` | Knowledge graph file path | `~/.gemvis/graph.ttl` |
 | `GEMVIS_EMBEDDINGS_PATH` | No | `~/.gemvis/embeddings.npz` | Embeddings vector store path | `~/.gemvis/embeddings.npz` |
 | `GOOGLE_API_KEY` | No | (unset) | ⚠️ Google Gemini API key (privacy violation — not recommended) | (leave unset) |

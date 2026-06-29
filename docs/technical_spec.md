@@ -356,7 +356,7 @@ results = collection.query(
 │   └── 사진-행사/
 ├── by-person/
 │   ├── 김과장/
-│   ├── 준혁/
+│   ├── Bob/
 │   └── ...
 ├── by-project/
 │   ├── Gemvis-해커톤/
@@ -418,7 +418,7 @@ class GemvisFileHandler(FileSystemEventHandler):
 
 # 모니터링 시작
 observer = Observer()
-observer.schedule(GemvisFileHandler(), path="/Users/andy/Documents", recursive=True)
+observer.schedule(GemvisFileHandler(), path="/Users/username/Documents", recursive=True)
 observer.start()
 ```
 

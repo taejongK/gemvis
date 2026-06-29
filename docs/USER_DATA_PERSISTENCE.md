@@ -30,10 +30,10 @@ Gemvis는 **프라이버시 우선** 원칙에 따라 모든 사용자 데이터
 {
   "analyze_lang": "ko",
   "watch_dirs": [
-    "/Users/andy/Documents",
-    "/Users/andy/Downloads",
-    "/Users/andy/gemvis_watch",
-    "/Users/andy/Pictures"
+    "/Users/username/Documents",
+    "/Users/username/Downloads",
+    "/Users/username/gemvis_watch",
+    "/Users/username/Pictures"
   ],
   "analyze_images": true
 }
@@ -247,7 +247,7 @@ crontab -e
 # .env 파일 수정
 nano .env
 # GEMVIS_WATCH_DIR 줄을 주석 처리:
-# GEMVIS_WATCH_DIR=/Users/andy/gemvis_watch
+# GEMVIS_WATCH_DIR=/Users/username/gemvis_watch
 
 # 백엔드 재시작
 ./scripts/stop_mac.sh && ./scripts/start_mac.sh

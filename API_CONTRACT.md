@@ -263,7 +263,7 @@ Response:
 
 ## ⚠️ 미구현 API (백엔드 작업 필요)
 
-혜지님 프론트엔드(`hanhj/poc`)에서 사용 중이지만 백엔드에 없는 API
+프론트엔드(`feature/frontend`)에서 사용 중이지만 백엔드에 없는 API
 
 ### 8. Work Schedule (우선순위: 낮음)
 

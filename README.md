@@ -97,17 +97,17 @@ Gemvis: "2026-03-15에 홍대 스시 오마카세였습니다.
 
 ```json
 {
-  "file_path": "/Users/andy/gemvis_watch/meeting.md",
+  "file_path": "/Users/username/gemvis_watch/meeting.md",
   "category": "document",
   "summary": "Gemvis 해커톤 진행 상황 회의",
   "tags": ["회의록", "해커톤", "Gemvis"],
   "entities": {
-    "people": ["인규", "준혁"],
+    "people": ["Alice", "Bob"],
     "projects": ["Gemvis"],
     "dates": ["2026-05-11"]
   },
   "relations": [
-    {"source": "인규", "target": "Gemvis", "relation": "works_on"}
+    {"source": "Alice", "target": "Gemvis", "relation": "works_on"}
   ],
   "analysis_status": "completed"
 }
@@ -307,10 +307,10 @@ scripts/
 
 | 역할 | 이름 | 담당 |
 |------|------|------|
-| 백엔드 리드 | 인규 | Gemma 4 통합, 분석 파이프라인 |
-| 그래프 전문가 | 준혁 | 지식그래프 설계, SPARQL 쿼리 |
-| 프론트엔드 리드 | 혜지 | UI 컴포넌트, 그래프 시각화 |
-| 콘텐츠 | 태종 | 문서, 데모 영상, 슬라이드 |
+| 백엔드 리드 | Alice | Gemma 4 통합, 분석 파이프라인 |
+| 그래프 전문가 | Bob | 지식그래프 설계, SPARQL 쿼리 |
+| 프론트엔드 리드 | Carol | UI 컴포넌트, 그래프 시각화 |
+| 콘텐츠 | Dave | 문서, 데모 영상, 슬라이드 |
 
 ---
 

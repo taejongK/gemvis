@@ -59,7 +59,7 @@ analysis_status:  pending | processing | completed | failed
 
 ```json
 {
-  "file_path": "/Users/andy/gemvis_watch/meeting.md",
+  "file_path": "/Users/username/gemvis_watch/meeting.md",
   "file_mtime": 1715435400.0,
   "file_ctime": 1715400000.0,
   "size_bytes": 2847,
@@ -69,14 +69,14 @@ analysis_status:  pending | processing | completed | failed
   "tags": ["회의록", "해커톤", "Gemvis"],
   "risk_level": "auto_safe",
   "entities": {
-    "people": ["인규", "준혁"],
+    "people": ["Alice", "Bob"],
     "places": [],
     "projects": ["Gemvis"],
     "dates": ["2026-05-11"],
     "events": ["회의"]
   },
   "relations": [
-    {"source": "인규", "source_type": "person",
+    {"source": "Alice", "source_type": "person",
      "target": "Gemvis", "target_type": "project", "relation": "works_on"}
   ],
 
@@ -160,7 +160,7 @@ analysis_status:  pending | processing | completed | failed
 
 ```turtle
 <node/file/{path}> rdf:type gvt:file ;
-    gva:name              "/Users/andy/meeting.md" ;
+    gva:name              "/Users/username/meeting.md" ;
     gva:category          "document" ;
     gva:summary           "Gemvis 해커톤 진행 상황 회의" ;
     gva:risk_level        "auto_safe" ;

@@ -272,7 +272,7 @@ User: "해커톤 관련된 사람들 다 보여줘"
 
 Gemvis:
   Cypher: MATCH (p:Person)-[*1..3]-(proj:Project {name: "해커톤"})
-  결과: 김과장, 준혁, 혜지, 태종, ...
+  결과: 김과장, Bob, Carol, Dave, ...
 
   "해커톤과 직간접적으로 연결된 사람 12명입니다.
    [그래프 뷰로 보기]"
@@ -1044,7 +1044,7 @@ Gemvis 감지:
 {
   "event": "file_accessed",
   "timestamp": "2026-04-30T14:23:45Z",
-  "file_path": "/Users/andy/Documents/report.pdf",
+  "file_path": "/Users/username/Documents/report.pdf",
   "action": "content_extraction",
   "success": true,
   "model_used": "gemma-4-e4b"
@@ -1162,14 +1162,14 @@ QUEUE_MAX_SIZE = 1000  # 대기 큐 최대 크기
   "version": "2.0.0",
   "monitored_paths": [
     {
-      "path": "/Users/andy/Documents",
+      "path": "/Users/username/Documents",
       "enabled": true,
       "recursive": true,
       "max_depth": -1,
       "exclude_patterns": []
     },
     {
-      "path": "/Users/andy/Projects",
+      "path": "/Users/username/Projects",
       "enabled": true,
       "recursive": true,
       "max_depth": 3,

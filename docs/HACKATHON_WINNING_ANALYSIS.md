@@ -169,7 +169,7 @@
 |------|------|------|
 | **정확도 보장 없음** | LLM 환각, 엔티티 추출 실패 가능 | 4상태 머신으로 실패 파일 명시, "review-first" 옵션 강조 |
 | **확장성 불명** | 1000개 파일 이상 테스트 없음 | "MVP는 개인 사용자 중심, Phase 2에서 팀 지원" 명시 |
-| **UI 완성도** | hanhj/poc 브랜치 미머지, 일부 화면 단순 | 기능 동작 우선, "해커톤 프로토타입" 강조 |
+| **UI 완성도** | feature/frontend 브랜치 미머지, 일부 화면 단순 | 기능 동작 우선, "해커톤 프로토타입" 강조 |
 
 ---
 
@@ -249,9 +249,9 @@
 01:15 - 질문 받기 (3분 45초)
 ```
 
-#### 3. hanhj/poc 머지 검증
+#### 3. feature/frontend 머지 검증
 ```bash
-git merge origin/hanhj/poc
+git merge origin/feature/frontend
 npm install
 npm run build
 # QA 재검증 필수
@@ -333,7 +333,7 @@ Gemvis는 다음 UN 지속가능발전목표(SDGs)에 기여합니다:
 **Action Item 우선순위**:
 1. ✅ **QA 수동 검증** (Critical) — [QA_MANUAL_CHECKLIST.md](QA_MANUAL_CHECKLIST.md) 실행
 2. ✅ **데모 시나리오 스크립트** (Critical) — 1분 15초 핵심 흐름
-3. ✅ **hanhj/poc 머지 + 빌드** (Critical) — UI 완성도 확인
+3. ✅ **feature/frontend 머지 + 빌드** (Critical) — UI 완성도 확인
 4. 📹 **데모 영상 촬영** (Important) — 3분 YouTube 업로드
 5. 📄 **README 간소화** (Important) — 비개발자 친화적으로
 6. 🌐 **커뮤니티 반응** (Nice-to-Have) — Reddit/HN 포스팅

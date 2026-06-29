@@ -14,11 +14,11 @@
 
 | 브랜치 | 주요 작업 | 상태 | 담당 |
 |--------|----------|------|------|
-| **main** | 기본 아키텍처, 문서, backend 구조 (Kùzu 기반) | ✅ 확정 | 인규 |
-| **feature/multi-agent** | rdflib 지식그래프, SPARQL, 하이브리드 검색, FastAPI | ✅ 완성 | 준혁 |
-| **hanhj/poc** | React 프론트엔드 (FullCalendar 캘린더 포함) | ✅ 완성 | 혜지 |
-| **tj/poc** | Multi-agent SSE 스트리밍 검색 (agents.py) | ✅ 완성 | 태종 |
-| **test/vision** | Gemma 4 비전 + llama.cpp 테스트 | ✅ 완료 | 인규 |
+| **main** | 기본 아키텍처, 문서, backend 구조 (Kùzu 기반) | ✅ 확정 | Alice |
+| **feature/multi-agent** | rdflib 지식그래프, SPARQL, 하이브리드 검색, FastAPI | ✅ 완성 | Bob |
+| **feature/frontend** | React 프론트엔드 (FullCalendar 캘린더 포함) | ✅ 완성 | Carol |
+| **tj/poc** | Multi-agent SSE 스트리밍 검색 (agents.py) | ✅ 완성 | Dave |
+| **test/vision** | Gemma 4 비전 + llama.cpp 테스트 | ✅ 완료 | Alice |
 
 ### ✅ 확정된 사항 (이미 완료)
 
@@ -44,7 +44,7 @@
 - ✅ **실시간 감시**: watchdog 파일 변경 감지
 - ✅ **FastAPI 서버**: gemvis/api.py
 
-#### 프론트엔드 (hanhj/poc)
+#### 프론트엔드 (feature/frontend)
 
 - ✅ **5개 뷰**: Dashboard, Calendar, GraphView, Search, Settings
 - ✅ **Spotlight 검색**: Ctrl+K 글로벌 검색 오버레이
@@ -64,10 +64,10 @@
 
 | 역할 | 담당자 | 주요 책임 |
 |------|--------|----------|
-| **프로젝트 리더** | 박인규 | 브랜치 통합 실행<br>충돌 해결 및 최종 검토<br>통합 테스트<br>해커톤 제출 자료 총괄 |
-| **프론트엔드** | 한혜지 | ✅ UI 완성 (hanhj/poc)<br>백엔드 API 연동 확인<br>SSE 스트리밍 UI 구현<br>최종 UX 개선 |
-| **지식그래프** | 박준혁 | ✅ 백엔드 완성 (feature/multi-agent)<br>API 검증 및 보완<br>GraphView 데이터 포맷 확인<br>성능 최적화 |
-| **채팅 백엔드** | 김태종 | ✅ Multi-agent 완성 (tj/poc)<br>SSE 통합 검증<br>응답 품질 개선<br>대화 히스토리 관리 |
+| **프로젝트 리더** | Backend Lead | 브랜치 통합 실행<br>충돌 해결 및 최종 검토<br>통합 테스트<br>해커톤 제출 자료 총괄 |
+| **프론트엔드** | Frontend Lead | ✅ UI 완성 (feature/frontend)<br>백엔드 API 연동 확인<br>SSE 스트리밍 UI 구현<br>최종 UX 개선 |
+| **지식그래프** | Graph Expert | ✅ 백엔드 완성 (feature/multi-agent)<br>API 검증 및 보완<br>GraphView 데이터 포맷 확인<br>성능 최적화 |
+| **채팅 백엔드** | Content Lead | ✅ Multi-agent 완성 (tj/poc)<br>SSE 통합 검증<br>응답 품질 개선<br>대화 히스토리 관리 |
 
 ---
 
@@ -77,7 +77,7 @@
 
 1. **main ← feature/multi-agent** (gemvis/ + frontend/ 추가)
 2. **main ← tj/poc** (gemvis/agents.py + api.py 업데이트)
-3. **main ← hanhj/poc** (frontend/ 완전 교체)
+3. **main ← feature/frontend** (frontend/ 완전 교체)
 4. **통합 테스트 및 검증**
 
 ### 디렉토리 구조
@@ -94,12 +94,12 @@ frontend/         # 프론트엔드 (일부 구현)
 gemvis/agents.py  # Multi-agent 파이프라인 추가
 gemvis/api.py     # /api/search/stream 엔드포인트 추가
 
-# hanhj/poc 브랜치
+# feature/frontend 브랜치
 frontend/         # 완성된 프론트엔드 (5개 뷰 + 캘린더)
 
 # 통합 후 최종 구조
 gemvis/           # 백엔드 메인 (feature/multi-agent + tj/poc 통합)
-frontend/         # 프론트엔드 메인 (hanhj/poc)
+frontend/         # 프론트엔드 메인 (feature/frontend)
 backend/          # 삭제 (구버전)
 ```
 
@@ -124,7 +124,7 @@ DELETE /api/graph             # 그래프 초기화
 POST /api/file/open-folder    # 폴더 열기
 ```
 
-**프론트엔드 사용 (hanhj/poc)**:
+**프론트엔드 사용 (feature/frontend)**:
 ```typescript
 api.dashboard()               # ✅ 일치
 api.graphData()               # ✅ 일치 (/api/graph/data)
@@ -154,7 +154,7 @@ api.generateSummary()         # ⚠️ 캘린더 요약 API 누락
 
 ## 📋 추가 필요 내용
 
-### 백엔드 (준혁님 + 인규님)
+### 백엔드 (그래프 담당자 + 백엔드 담당자)
 
 | 작업 | 우선순위 | 예상 소요 | 설명 |
 |------|---------|----------|------|
@@ -164,17 +164,17 @@ api.generateSummary()         # ⚠️ 캘린더 요약 API 누락
 | **GraphView 포맷** | ★★ | 0.5일 | react-force-graph 데이터 형식 확인 |
 | **성능 최적화** | ★ | 1일 | 쿼리 속도, 메모리 사용량 개선 |
 
-### 프론트엔드 (혜지님)
+### 프론트엔드 (프론트엔드 담당자)
 
 | 작업 | 우선순위 | 예상 소요 | 설명 |
 |------|---------|----------|------|
-| **브랜치 통합 확인** | ★★★ | 0.5일 | hanhj/poc → main 머지 후 동작 확인 |
+| **브랜치 통합 확인** | ★★★ | 0.5일 | feature/frontend → main 머지 후 동작 확인 |
 | **SSE 스트리밍 UI** | ★★★ | 1일 | `/api/search/stream` 연결, 실시간 렌더링 |
 | **캘린더 API 연동** | ★★ | 0.5일 | 백엔드 API 완성 후 연결 |
 | **에러 핸들링** | ★★ | 0.5일 | API 실패 시 사용자 피드백 |
 | **UI 폴리싱** | ★ | 1일 | 애니메이션, 로딩 상태 개선 |
 
-### 채팅 (태종님)
+### 채팅 (콘텐츠 담당자)
 
 | 작업 | 우선순위 | 예상 소요 | 설명 |
 |------|---------|----------|------|
@@ -202,10 +202,10 @@ api.generateSummary()         # ⚠️ 캘린더 요약 API 누락
 
 | 날짜 | 작업 | 담당 |
 |------|------|------|
-| **4/29 (월)** | • feature/multi-agent → main 머지<br>• tj/poc → main 머지<br>• `backend/` 삭제 | 인규 + 준혁 |
-| **4/30 (화)** | • hanhj/poc → main 머지<br>• API 정렬 확인 (누락 항목 파악) | 인규 + 혜지 |
-| **5/1 (수)** | • 캘린더 요약 API 4개 구현<br>• API 테스트 | 준혁 |
-| **5/2 (목)** | • 프론트 캘린더 API 연동<br>• E2E 기본 테스트 | 혜지 + 전원 |
+| **4/29 (월)** | • feature/multi-agent → main 머지<br>• tj/poc → main 머지<br>• `backend/` 삭제 | Alice + Bob |
+| **4/30 (화)** | • feature/frontend → main 머지<br>• API 정렬 확인 (누락 항목 파악) | Alice + Carol |
+| **5/1 (수)** | • 캘린더 요약 API 4개 구현<br>• API 테스트 | Bob |
+| **5/2 (목)** | • 프론트 캘린더 API 연동<br>• E2E 기본 테스트 | Carol + 전원 |
 
 ### Phase 2 (5/3 ~ 5/9, 7일): SSE + 최적화
 
@@ -213,9 +213,9 @@ api.generateSummary()         # ⚠️ 캘린더 요약 API 누락
 
 | 날짜 | 작업 | 담당 |
 |------|------|------|
-| **5/3~4 (주말)** | • SSE 스트리밍 UI 구현<br>• 채팅 응답 품질 개선 | 혜지 + 태종 |
-| **5/5 (월)** | • 성능 벤치마크<br>• 쿼리 최적화 | 준혁 + 인규 |
-| **5/6 (화)** | • 에러 핸들링 강화<br>• UI 폴리싱 | 혜지 |
+| **5/3~4 (주말)** | • SSE 스트리밍 UI 구현<br>• 채팅 응답 품질 개선 | Carol + Dave |
+| **5/5 (월)** | • 성능 벤치마크<br>• 쿼리 최적화 | Bob + Alice |
+| **5/6 (화)** | • 에러 핸들링 강화<br>• UI 폴리싱 | Carol |
 | **5/7 (수)** | • 전체 기능 통합 테스트 | 전원 |
 | **5/8~9 (목~금)** | • **E2E 통합 테스트**<br>• 전원 PC 설치 → 실제 파일 테스트 | 전원 |
 
@@ -236,7 +236,7 @@ api.generateSummary()         # ⚠️ 캘린더 요약 API 누락
 
 ## 🚀 즉시 실행 액션 (오늘 4/29)
 
-### 인규님
+### 백엔드 담당자
 
 ```bash
 cd ~/gemvis
@@ -260,7 +260,7 @@ git commit -m "chore: merge feature/multi-agent + tj/poc - rdflib graph + SSE st
 git push origin main
 ```
 
-### 혜지님
+### 프론트엔드 담당자
 
 ```bash
 cd ~/gemvis
@@ -269,8 +269,8 @@ cd ~/gemvis
 git checkout main
 git pull origin main
 
-# 2. hanhj/poc 머지
-git merge origin/hanhj/poc
+# 2. feature/frontend 머지
+git merge origin/feature/frontend
 # → frontend/ 완전 교체됨
 
 # 3. 백엔드 API 확인
@@ -279,11 +279,11 @@ git merge origin/hanhj/poc
 
 # 4. 커밋
 git add frontend/
-git commit -m "feat: merge hanhj/poc - complete UI with calendar"
+git commit -m "feat: merge feature/frontend - complete UI with calendar"
 git push origin main
 ```
 
-### 준혁님
+### 그래프 담당자
 
 ```bash
 cd ~/gemvis
@@ -305,7 +305,7 @@ git pull origin main
 # "캘린더 요약 API 6개 구현" 이슈 등록
 ```
 
-### 태종님
+### 콘텐츠 담당자
 
 ```bash
 cd ~/gemvis
@@ -354,7 +354,7 @@ git pull origin main
 
 - [x] feature/multi-agent → main 머지 완료
 - [x] tj/poc → main 머지 완료
-- [x] hanhj/poc → main 머지 완료
+- [x] feature/frontend → main 머지 완료
 - [x] `backend/` 삭제 완료
 
 ### API 구현 및 연동 ✅
@@ -391,8 +391,8 @@ git pull origin main
 
 ### 1. 이미 완성된 코드 활용
 
-- ✅ 백엔드: rdflib + SPARQL + 임베딩 + SSE (준혁님 + 태종님)
-- ✅ 프론트: 5개 뷰 완성 + 캘린더 UI (혜지님)
+- ✅ 백엔드: rdflib + SPARQL + 임베딩 + SSE (그래프 담당자 + 콘텐츠 담당자)
+- ✅ 프론트: 5개 뷰 완성 + 캘린더 UI (프론트엔드 담당자)
 - ✅ 통합만 하면 80% 완성
 
 → **새로 만들 것: 캘린더 요약 API 6개만**

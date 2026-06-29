@@ -81,19 +81,19 @@ class GemInsight:
 
 ```json
 {
-  "file_path": "/Users/andy/gemvis_watch/test_meeting_note.md",
+  "file_path": "/Users/username/gemvis_watch/test_meeting_note.md",
   "category": "document",
   "summary": "Gemvis 프로젝트 회의록 — 해커톤 일정과 기술 스택 결정, 다음 주 할 일 논의",
   "tags": ["회의록", "프로젝트", "해커톤", "기술스택", "LLM", "React", "그래프DB"],
   "entities": {
-    "people":   ["인규", "준혁", "혜지", "태종"],
+    "people":   ["Alice", "Bob", "Carol", "Dave"],
     "places":   ["강남 스타벅스"],
     "projects": ["Gemvis"],
     "dates":    ["2026-05-11", "2026-05-15", "2026-05-20", "2026-05-13"],
     "events":   ["회의", "해커톤"]
   },
   "relations": [
-    {"source": "인규", "source_type": "person",
+    {"source": "Alice", "source_type": "person",
      "target": "Gemvis", "target_type": "project", "relation": "works_on"},
     {"source": "회의", "source_type": "event",
      "target": "2026-05-11", "target_type": "date", "relation": "occurred_at"},
@@ -127,7 +127,7 @@ GemInsight 1개가 생성되면 **3곳에 동시 기록**된다.
 <file/test_meeting_note.md> rdf:type gvt:file ;
     gva:summary "Gemvis 프로젝트 회의록..." ;
     gva:category "document" ;
-    gvr:mentions <person/인규> ;
+    gvr:mentions <person/Alice> ;
     gvr:mentions <place/강남 스타벅스> ;
     gvr:tagged_with <tag/회의록> .
 
@@ -153,7 +153,7 @@ GemInsight 1개가 생성되면 **3곳에 동시 기록**된다.
 ```turtle
 # ~/.gemvis/events.ttl
 <event/xxx> evt:action "created" ;
-            evt:file_path "/Users/andy/.../test_meeting_note.md" ;
+            evt:file_path "/Users/username/.../test_meeting_note.md" ;
             evt:timestamp "2026-05-11T14:30:00" ;
             evt:period "work" .
 ```
@@ -239,13 +239,13 @@ file → person → project (연결 관계 시각화)
 **쿼리 방식**: Hybrid Retrieval + LLM 답변 생성
 
 ```
-사용자: "인규가 담당한 업무 뭐였지?"
+사용자: "Alice가 담당한 업무 뭐였지?"
     ↓
 [1] Intent 파싱 (Gemma 4)
-    search_terms: ["인규"], semantic_query: "담당 업무"
+    search_terms: ["Alice"], semantic_query: "담당 업무"
     ↓
 [2] 파일 후보 검색 (2단계 병렬)
-    ┌─ KG: person:인규의 1-hop 이웃 → 연결된 file 노드 수집
+    ┌─ KG: person:Alice의 1-hop 이웃 → 연결된 file 노드 수집
     └─ Embedding: "담당 업무" 유사도 → file top-K
     ↓
 [3] 교집합 재랭킹 → 후보 file 노드 10~20개
@@ -254,7 +254,7 @@ file → person → project (연결 관계 시각화)
     각 file 노드의 {summary, tags, category} → 프롬프트에 삽입
     ↓
 [5] Gemma 4 답변 생성
-    "인규님은 백엔드 파이프라인 마무리를 담당했어요.
+    "백엔드 담당자은 백엔드 파이프라인 마무리를 담당했어요.
      관련 파일: test_meeting_note.md (2026-05-11 회의록)"
 ```
 
