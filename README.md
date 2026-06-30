@@ -102,12 +102,12 @@ Gemvis: "2026-03-15에 홍대 스시 오마카세였습니다.
   "summary": "Gemvis 해커톤 진행 상황 회의",
   "tags": ["회의록", "해커톤", "Gemvis"],
   "entities": {
-    "people": ["Alice", "Bob"],
+    "people": ["김철수", "이영희"],
     "projects": ["Gemvis"],
     "dates": ["2026-05-11"]
   },
   "relations": [
-    {"source": "Alice", "target": "Gemvis", "relation": "works_on"}
+    {"source": "김철수", "target": "Gemvis", "relation": "works_on"}
   ],
   "analysis_status": "completed"
 }
@@ -303,14 +303,14 @@ scripts/
 
 ---
 
-## 팀
+## 개발자
 
-| 역할 | 이름 | 담당 |
-|------|------|------|
-| 백엔드 리드 | Alice | Gemma 4 통합, 분석 파이프라인 |
-| 그래프 전문가 | Bob | 지식그래프 설계, SPARQL 쿼리 |
-| 프론트엔드 리드 | Carol | UI 컴포넌트, 그래프 시각화 |
-| 콘텐츠 | Dave | 문서, 데모 영상, 슬라이드 |
+개인 프로젝트 — 기획, 설계, 백엔드/프론트엔드 구현, 문서 작성 전 과정을 혼자 진행했습니다.
+
+| | |
+|--|--|
+| **GitHub** | [@taejongK](https://github.com/taejongK) |
+| **Email** | xowhddk123@gmail.com |
 
 ---
 

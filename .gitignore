@@ -248,4 +248,4 @@ AGENTS.md
 .omc/
 
 # Claude Code runtime
-.claude/scheduled_tasks.lock.claude/
+.claude/

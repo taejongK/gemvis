@@ -69,14 +69,14 @@ analysis_status:  pending | processing | completed | failed
   "tags": ["회의록", "해커톤", "Gemvis"],
   "risk_level": "auto_safe",
   "entities": {
-    "people": ["Alice", "Bob"],
+    "people": ["김철수", "이영희"],
     "places": [],
     "projects": ["Gemvis"],
     "dates": ["2026-05-11"],
     "events": ["회의"]
   },
   "relations": [
-    {"source": "Alice", "source_type": "person",
+    {"source": "김철수", "source_type": "person",
      "target": "Gemvis", "target_type": "project", "relation": "works_on"}
   ],
 

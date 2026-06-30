@@ -45,7 +45,7 @@ def sample_completed_insight(tmp_path: Path) -> GemInsight:
         summary="Gemvis 회의록",
         tags=["회의", "해커톤"],
         entities={
-            "people": ["Alice", "Bob"],
+            "people": ["김철수", "이영희"],
             "places": ["강남"],
             "projects": ["Gemvis"],
             "dates": ["2026-05-11"],
@@ -53,7 +53,7 @@ def sample_completed_insight(tmp_path: Path) -> GemInsight:
         },
         relations=[
             {
-                "source": "Alice",
+                "source": "김철수",
                 "source_type": "person",
                 "target": "Gemvis",
                 "target_type": "project",

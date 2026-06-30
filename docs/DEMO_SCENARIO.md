@@ -448,6 +448,5 @@ Privacy-First On-Device Knowledge Graph Assistant
 
 ---
 
-**제작 담당**: Dave  
-**검토**: 전체 팀 (Alice, Bob, Carol)  
+
 **최종 마감**: 2026-05-13 (제출 2일 전)
