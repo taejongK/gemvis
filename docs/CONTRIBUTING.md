@@ -342,7 +342,7 @@ frontend/src/
 - Retry available for failed files
 
 **Hybrid Search**:
-1. **SPARQL** (structural/exact) — "files mentioning Alice", "tag:meeting"
+1. **SPARQL** (structural/exact) — "files mentioning 김철수", "tag:meeting"
 2. **Embeddings** (semantic) — "happy photos", typos/synonyms
 3. **LLM** (intent parsing + answer generation)
 

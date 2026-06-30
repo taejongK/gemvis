@@ -91,12 +91,12 @@ A: {{
   "intent": "최근 논문 관련 파일"
 }}
 
-Q: "Alice가 누구야"
+Q: "김철수가 누구야"
 A: {{
-  "search_terms": ["Alice"],
+  "search_terms": ["김철수"],
   "node_types": ["person"],
   "semantic_query": "",
-  "intent": "Alice 엔티티 조회"
+  "intent": "김철수 엔티티 조회"
 }}
 
 Q: "해커톤 아이디어들"
@@ -287,7 +287,7 @@ class SearchEngine:
     def _rule_based_intent(self, question: str) -> dict:
         """Fast path: rule-based intent parsing (no LLM).
 
-        Used for simple keyword queries like "회의", "Alice 2024-03", "가족 사진".
+        Used for simple keyword queries like "회의", "김철수 2024-03", "가족 사진".
         """
         q = question.strip()
         tokens = q.split()

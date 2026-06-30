@@ -272,7 +272,7 @@ User: "해커톤 관련된 사람들 다 보여줘"
 
 Gemvis:
   Cypher: MATCH (p:Person)-[*1..3]-(proj:Project {name: "해커톤"})
-  결과: 김과장, Bob, Carol, Dave, ...
+  결과: 김과장, 이민준, 박지수, ...
 
   "해커톤과 직간접적으로 연결된 사람 12명입니다.
    [그래프 뷰로 보기]"

@@ -261,7 +261,7 @@ class KnowledgeGraph:
         Example:
             kg.sparql(
                 "SELECT ?file WHERE { ?file a gvt:file ; gvr:mentions ?p . ?p gva:name ?name }",
-                name=Literal("Alice"),
+                name=Literal("김철수"),
             )
         """
         full_query = SPARQL_PREFIXES + "\n" + query
